@@ -17,10 +17,9 @@
 <div class="vi">
     <div class="sidebar">
         <div class="header">
-            <h1>Cyris</h1>
+            <h1 class="shake">CYRIS.MOE</h1>
             <div class="quote">
-                <p class="quote-text animate-init">我试图在寻找的，也许是一种清晰而诚恳的自我表达。</p>
-                <p class="quote-author animate-init">《得未曾有》—— <strong>庆山</strong></p>
+                <p class="quote-text animate-init">一期一会，为之尽兴，珍惜而待。</p>
             </div>
         </div>
         <div class="menu">
@@ -49,8 +48,8 @@
         var animationOptions = { opacity: 1, top: 0};
 
         $('h1').animate(animationOptions).promise()
-                .pipe(animateMain)
-                .pipe(animateLocationIcon);
+            .pipe(animateMain)
+            .pipe(animateLocationIcon);
 
         function animateMain() {
             var dfd = $.Deferred();
@@ -60,7 +59,7 @@
             els.each(function (index, el) {
                 delay++;
                 $(el).delay(index * DELAY_STEP)
-                        .animate(animationOptions);
+                    .animate(animationOptions);
                 (size - 1 === index) && dfd.resolve();
             });
             return dfd.promise();
@@ -74,18 +73,7 @@
         }
 
         function animationQuote() {}
-
-        $(document.body).on('keydown', function (event) {
-            // Press 'b' key
-            if (event.which === 66) {
-                $('.relocate-location').text('Bookmark Page');
-                $('.relocating').css('opacity', 1);
-
-                window.setTimeout(function () {
-                    window.location.href = '/bookmarks.html';
-                }, 1000);
-            }
-        });
+        
     });
 </script>
 </body>
