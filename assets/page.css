@@ -2,126 +2,128 @@
     margin: 0;
     padding: 0;
 }
-
 body {
-    font: 16px/1.8 "Lato", "Microsoft Jhenghei", "Hiragino Sans GB", "Microsoft YaHei", arial, sans-serif;
+    font: 1rem/1.8 "Lato", "Microsoft Jhenghei", "Hiragino Sans GB", "Microsoft YaHei", arial, sans-serif;
     background-color: #fff;
 }
-
 .cy {
     position: relative;
-    margin: 100px auto 0;
-    width: 960px;
+    margin: 6.25rem auto 0;
+    width: 60rem;
 }
-
-@media (max-width: 767px) {
+@media (max-width: 47.9375rem) {
     .cy {
-        margin-top: 50px;
+        margin-top: 3.125rem;
         width: auto;
     }
 }
-
 @font-face {
     font-family: "Poiret One";
     src: url("./fonts/PoiretOne-Regular.ttf");
 }
-
 @font-face {
     font-family: "Herculanum";
     src: url("./fonts/Herculanum.ttf");
 }
-
 h1 {
     font-family: "Herculanum",sans-serif,Arial,serif;
-    font-size: 65px;
-    letter-spacing: 7px;
+    font-size: 4.0625rem;
+    letter-spacing: 0.4375rem;
     text-align: center;
     position: relative;
     color: #5A6B6F;
 }
-
 h2 {
     font-family: "Poiret One",sans-serif,Arial,serif;
-    font-size: 20px;
-    letter-spacing: 2px;
+    font-size: 1.25rem;
+    letter-spacing: 0.125rem;
     text-align: center;
     position: relative;
     color: #5A6B6F;
 }
-
 .menu {
-    margin-top: 30px;
+    margin-top: 1.875rem;
     text-align: center;
 }
-
 .menu a {
     display: inline-block;
     position: relative;
-    margin-left: 10px;
+    margin-left: 0.625rem;
     text-decoration: none;
-    border-bottom: 2px solid #cccccc;
+    border-bottom: 0.125rem solid #cccccc;
     color: #5A6B6F;
-    font-size: 16px;
+    font-size: 1rem;
 }
-
 .menu-init {
     position: relative;
-    top: 15px;
+    top: 0.9375rem;
 }
-
 .menu a:hover {
-    border-bottom: 2px solid #FB9966;
+    border-bottom: 0.125rem solid #FB9966;
 }
-
 #m-b:hover {
-    border-bottom: 2px solid #6AA76E;
+    border-bottom: 0.125rem solid #6AA76E;
 }
-
 #m-c:hover {
-    border-bottom: 2px solid #4D4D4D;
+    border-bottom: 0.125rem solid #4D4D4D;
 }
-
 #m-d:hover {
-    border-bottom: 2px solid #EB7A77;
+    border-bottom: 0.125rem solid #EB7A77;
 }
-
 .menu a:first-child {
     margin-left: 0;
 }
-
 .shake {
     display:block;
     position:relative;
 }
-
 @-webkit-keyframes spaceboots {
-    0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
-    10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
-    30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
-    40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
-    50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
-    70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
-    80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
-    90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
-    100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+    0% {
+        -webkit-transform: translate(0.125rem, 0.0625rem) rotate(0deg);
+    }
+    10% {
+        -webkit-transform: translate(-0.0625rem, -0.125rem) rotate(-1deg);
+    }
+    20% {
+        -webkit-transform: translate(-0.1875rem, 0rem) rotate(1deg);
+    }
+    30% {
+        -webkit-transform: translate(0rem, 0.125rem) rotate(0deg);
+    }
+    40% {
+        -webkit-transform: translate(0.0625rem, -0.0625rem) rotate(1deg);
+    }
+    50% {
+        -webkit-transform: translate(-0.0625rem, 0.125rem) rotate(-1deg);
+    }
+    60% {
+        -webkit-transform: translate(-0.1875rem, 0.0625rem) rotate(0deg);
+    }
+    70% {
+        -webkit-transform: translate(0.125rem, 0.0625rem) rotate(-1deg);
+    }
+    80% {
+        -webkit-transform: translate(-0.0625rem, -0.0625rem) rotate(1deg);
+    }
+    90% {
+        -webkit-transform: translate(0.125rem, 0.125rem) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translate(0.0625rem, -0.125rem) rotate(-1deg);
+    }
 }
-.shake:hover,
-.shake:focus {
+.shake:hover, .shake:focus {
     -webkit-animation-name: spaceboots;
     -webkit-animation-duration: 0.8s;
     -webkit-transform-origin:50% 50%;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
 }
-
 footer {
     position: relative;
     height: 100%;
     margin-top: 26%;
 }
-
 footer #license{
     text-align: center;
     position: relative;
