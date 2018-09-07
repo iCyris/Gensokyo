@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
-    <link rel="icon" sizes="144x144" href="/img/favicon.png">
-    <link rel="apple-touch-icon" href="/img/favicon.png">
+    <link rel="icon shortcut" type="image/ico" href="./img/favicon.png">
+    <link rel="icon" sizes="144x144" href="./img/favicon.png">
+    <link rel="apple-touch-icon" href="./img/favicon.png">
     <meta name="apple-mobile-web-app-title" content="Cyris">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Cyris / 绿生</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/page.min.css"/>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120896908-3"></script>
     <script>
@@ -21,73 +21,21 @@
       gtag('config', 'UA-120896908-3');
 </script>
 </head>
-
 <body>
-<div class="vi">
-    <div class="sidebar">
-        <div class="header">
-            <h1 class="shake">CYRIS.MOE</h1>
-            <div class="quote">
-                <p class="quote-text animate-init">
-                    <div id="slogan">一期一会，为之尽兴，珍惜而待。</div>
-                </p>
-            </div>
-        </div>
-        <div class="menu">
-            <a href="https://cyris.pen.moe/" class="animate-init">Blog</a>
-            <a href="https://qwq.cyris.moe/" class="animate-init">qwq!</a>
-            <a href="https://github.com/iCyris" class="animate-init">GitHub</a>
-            <a href="https://weibo.com/iCyr1s" class="animate-init">WeiBo</a>
-        </div>
-        <div class="location">
-            <i class="location-icon"></i>
-            <span class="location-text animate-init">HangZhou - China</span>
-        </div>
-        <div class="relocating">
-            Navigating to: <span class="relocate-location"></span>...
-        </div>
-    </div>
-
-    <div class="content">
-        <span class="close">close</span>
+<div class="cy">
+    <h1 class="shake">cyris.moe</h1>
+    <h2 class="slogan">Write a world in code.</h2>
+    <div class="menu">
+        <a href="https://cyris.pen.moe/" class="menu-init" id="m-a">Blog</a>
+        <a href="https://qwq.cyris.moe/" class="menu-init" id="m-b">qwq!</a>
+        <a href="https://github.com/iCyris" class="menu-init" id="m-c">GitHub</a>
+        <a href="https://weibo.com/iCyr1s" class="menu-init" id="m-d">WeiBo</a>
     </div>
 </div>
-<script type="text/javascript" src="assets/js/index.js"></script>
-<script type="text/javascript" src="assets/js/page.js"></script>
-<script>
-    $(document).ready(function () {
-        var delay = 1;
-        var DELAY_STEP = 200;
-        var animationOptions = { opacity: 1, top: 0};
-
-        $('h1').animate(animationOptions).promise()
-            .pipe(animateMain)
-            .pipe(animateLocationIcon);
-
-        function animateMain() {
-            var dfd = $.Deferred();
-            var els = $('.animate-init');
-            var size = els.size();
-
-            els.each(function (index, el) {
-                delay++;
-                $(el).delay(index * DELAY_STEP)
-                    .animate(animationOptions);
-                (size - 1 === index) && dfd.resolve();
-            });
-            return dfd.promise();
-        }
-
-        function animateLocationIcon() {
-            $('.location-icon').delay(delay * DELAY_STEP).animate({
-                opacity: 1,
-                top: 0
-            }).promise().done(animationQuote);
-        }
-
-        function animationQuote() {}
-
-    });
-</script>
 </body>
+<footer>
+    <p id="license">
+        Copyright © 2018 Cyris. All rights reserved.
+    </p>
+</footer>
 </html>
