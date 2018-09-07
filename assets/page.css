@@ -26,8 +26,13 @@ body {
     src: url("./fonts/PoiretOne-Regular.ttf");
 }
 
+@font-face {
+    font-family: "Herculanum";
+    src: url("./fonts/Herculanum.ttf");
+}
+
 h1 {
-    font-family: Herculanum,"Poiret One",sans-serif,Arial,serif;
+    font-family: "Herculanum",sans-serif,Arial,serif;
     font-size: 65px;
     letter-spacing: 7px;
     text-align: center;
