@@ -8,7 +8,8 @@ body {
 }
 .cy {
     position: relative;
-    margin: 6.25rem auto 0;
+    padding: 0.625rem;
+    margin: 13.125rem auto 0;
     width: 60rem;
 }
 @media (max-width: 47.9375rem) {
@@ -22,41 +23,46 @@ body {
     src: url("./fonts/PoiretOne-Regular.ttf");
 }
 @font-face {
-    font-family: "Herculanum";
-    src: url("./fonts/Herculanum.ttf");
+    font-family: "3270-Medium";
+    src: url("./fonts/3270-Medium.ttf");
 }
 h1 {
-    font-family: "Herculanum",sans-serif,Arial,serif;
-    font-size: 4.0625rem;
-    letter-spacing: 0.4375rem;
+    font-family: "Poiret One","Herculanum",sans-serif,Arial,serif;
+    font-size: 3.9375rem;
+    letter-spacing: 0.875rem;
+    margin: 0.625rem auto;
     text-align: center;
     position: relative;
     color: #5A6B6F;
+    text-transform: uppercase;
 }
 h2 {
-    font-family: "Poiret One",sans-serif,Arial,serif;
+    font-family: "3270-Medium",Arial,serif;
     font-size: 1.25rem;
-    letter-spacing: 0.125rem;
+    letter-spacing: 0.225rem;
+    margin: 0.625rem;
     text-align: center;
     position: relative;
     color: #5A6B6F;
+    text-transform: uppercase;
 }
 .menu {
-    margin-top: 1.875rem;
+    margin: 0.75rem;
     text-align: center;
 }
 .menu a {
     display: inline-block;
     position: relative;
-    margin-left: 0.625rem;
+    margin-top: 0.625rem;
+    margin-left: 1rem;
     text-decoration: none;
     border-bottom: 0.125rem solid #cccccc;
     color: #5A6B6F;
-    font-size: 1rem;
+    font-size: 0.9375rem;
 }
 .menu-init {
     position: relative;
-    top: 0.9375rem;
+    top: 0.625rem;
 }
 .menu a:hover {
     border-bottom: 0.125rem solid #FB9966;
@@ -120,15 +126,15 @@ h2 {
     -webkit-animation-timing-function: linear;
 }
 footer {
-    position: relative;
     height: 100%;
     margin-top: 26%;
+    margin-bottom: 0.75rem;
 }
 footer #license{
+    font-size: 0.9375rem;
     text-align: center;
     position: relative;
-    margin-left: 0;
-    margin-right: 0;
+    margin: auto;
     height: auto;
     display: block;
     color: #5A6B6F;
