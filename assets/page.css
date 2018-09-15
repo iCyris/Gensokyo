@@ -7,25 +7,26 @@ body {
     background-image: url("../img/bgi.png");
 }
 .root {
+    min-height: 100%;
     position: relative;
     padding: 0.625rem;
     margin: 13.125rem auto 0;
     width: 29rem;
 }
 .site-logo {
-    margin-top: 32%;
-    margin-bottom: 50%;
+    margin-top: 23%;
 }
-.site-logo img{
+.site-logo img {
     width: auto;
     height: auto;
-    max-width: 37%;
-    max-height: 37%;
+    max-width: 30%;
+    max-height: 30%;
     position: relative;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
+/* Nav */
 nav {
     position: fixed;
     left: 20px;
@@ -66,13 +67,42 @@ nav a {
     border-bottom: 0.125rem solid #EB7A77;
     opacity: 1;
 }
-.footer{
-    height: 100%;
-    font-size: 12px;
-    text-align: center;
-    position: relative;
+/* Welcome Page */
+#button {
+    letter-spacing: .6px;
+    padding: 1px;
+    position: fixed;
+    right: 1.5rem;
+    top: 1.5rem;
+    cursor: pointer;
     display: block;
-    margin: 6px 0;
-    color: #5A6B6F;
-    letter-spacing: .4em;
+}
+#button p{
+    color: #2E343F;
+    border: 1px solid #2E343F;
+    padding: 9px 16px;
+    transition: .2s all;
+}
+#button p:hover {
+    background: #2E343F;
+    color: #fff;
+}
+#about {
+    letter-spacing: .3px;
+    font-size: .7em;
+    text-rendering: optimizeLegibility;
+    position: fixed;
+    height: 10rem;
+    width: 12rem;
+    right: 1.5rem;
+    top: 5.8rem;
+    cursor: auto;
+    display: none;
+}
+#about p{
+    border: 1px solid #2E343F;
+    padding: 5px 10px;
+    line-height: 2em;
+    color: white;
+    background: #2E343F;
 }
