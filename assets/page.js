@@ -23,8 +23,8 @@ function quq(obj)
 }
 window.onload=function()
 {
-    var btn = document.getElementById("button");
-    var about = document.getElementById("about");
+    var btn = document.getElementById("site__button");
+    var about = document.getElementById("site__about");
     var hi = document.getElementById("hi");
     btn.onclick = function()
     {
