@@ -12,7 +12,7 @@
 }
 body {
   font: 1rem/1.8 "Lato", "Microsoft Jhenghei", "Hiragino Sans GB", "Microsoft YaHei", arial, sans-serif;
-  background: url("../img/bg.png");
+  background-image: url("../img/bg.png");
 }
 @keyframes fade_in {
   from {
@@ -27,50 +27,13 @@ body {
   img {
     width: auto;
     height: auto;
-    max-width: 25%;
-    max-height: 25%;
+    max-width: 30%;
+    max-height: 30%;
     position: absolute;
-    top: 42%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     animation: fade_in .5s;
-  }
-}
-#site__plant {
-  :hover {
-    cursor: pointer;
-    animation: touch_plant .5s infinite;
-  }
-  img {
-    width: auto;
-    height: auto;
-    position: absolute;
-    max-width: 25%;
-    max-height: 25%;
-    top: 85%;
-    left: 50.5%;
-    transform: translate(-50%,-50%);
-    animation: fade_in .5s;
-  }
-}
-@keyframes touch_plant {
-  0% {
-    left: 50.5%;
-  }
-  20% {
-    left: 50%;
-  }
-  40% {
-    left: 51%;
-  }
-  60% {
-    left: 50%;
-  }
-  80% {
-    left: 51%;
-  }
-  100% {
-    left: 50.5%;
   }
 }
 /*** Nav Line ***/
