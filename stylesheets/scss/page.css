@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: Roboto, serif; }
+
+.main {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-image: url("../../images/diandian.svg");
+  background-size: 30px; }
+
+/* page-frame */
+@media screen and (max-width: 760px) {
+  .page-frame {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px); } }
+.page-frame {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: calc(100% - 60px);
+  height: calc(100% - 60px); }
+  .page-frame div:nth-child(1) {
+    position: absolute;
+    display: block;
+    top: 0;
+    height: 5px;
+    width: 100%;
+    border-top: #666666 dashed 3px; }
+  .page-frame div:nth-child(2) {
+    position: absolute;
+    display: block;
+    left: 0;
+    height: 100%;
+    width: 5px;
+    border-left: #666666 dashed 3px; }
+  .page-frame div:nth-child(3) {
+    position: absolute;
+    display: block;
+    right: 0;
+    height: 100%;
+    width: 5px;
+    border-right: #666666 dashed 3px; }
+  .page-frame div:nth-child(4) {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    height: 5px;
+    width: 100%;
+    border-bottom: #666666 dashed 3px; }
+
+/* page-title */
+.page-title {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 78px;
+  background: #ffffff; }
+  .page-title img {
+    position: relative;
+    width: 300px;
+    animation: top_fade_in 1s; }
+
+/* page-logo */
+.page-logo {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  width: 75px;
+  height: 100px;
+  transform: translate(-50%, -50%); }
+  .page-logo img:nth-child(1) {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: char-1 5s;
+    z-index: 1000; }
+  .page-logo img:nth-child(2) {
+    width: 100%;
+    position: absolute;
+    left: 155%;
+    top: -95%;
+    opacity: 0;
+    animation: char-2 5s; }
+  .page-logo img:nth-child(3) {
+    width: 100%;
+    position: absolute;
+    left: -200%;
+    top: 60%;
+    opacity: 0;
+    animation: char-3 5s; }
+  .page-logo img:nth-child(4) {
+    width: 100%;
+    position: absolute;
+    left: -120%;
+    top: -200%;
+    opacity: 0;
+    animation: char-4 5s; }
+  .page-logo img:nth-child(5) {
+    width: 100%;
+    position: absolute;
+    left: 200%;
+    top: 120%;
+    opacity: 0;
+    animation: char-5 5s; }
+
+/* page-click */
+.page-click {
+  position: absolute;
+  right: 75px;
+  bottom: 18px;
+  width: 100px;
+  height: 60px;
+  background-color: #ffffff; }
+  .page-click img {
+    position: absolute;
+    width: 60px;
+    left: 20px;
+    top: 0;
+    animation: move 1.5s infinite; }
+  .page-click img:hover {
+    cursor: pointer; }
+
+/* animation */
+@keyframes fade_in {
+  0% {
+    opacity: 0; }
+  90% {
+    opacity: 1; } }
+@keyframes top_fade_in {
+  from {
+    opacity: 0;
+    top: -25px; }
+  to {
+    opacity: 1;
+    top: 0; } }
+@keyframes move {
+  10%, 30%, 50% {
+    transform: rotate(-3deg); }
+  20%, 40%, 60% {
+    transform: rotate(3deg); }
+  70%, 100% {
+    transform: rotate(0); } }
+/* char part */
+@keyframes char-1 {
+  0% {
+    opacity: 0;
+    left: 0;
+    top: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes char-2 {
+  0% {
+    opacity: 0;
+    left: 70%;
+    top: -80%; }
+  10% {
+    opacity: .6; }
+  15%, 80% {
+    opacity: .3;
+    left: 0;
+    top: 0; }
+  90% {
+    opacity: 0;
+    left: 70%;
+    top: -80%; } }
+@keyframes char-3 {
+  0% {
+    opacity: 0;
+    left: -100%;
+    top: 60%; }
+  30% {
+    opacity: .5; }
+  35%, 80% {
+    opacity: .5;
+    left: 0;
+    top: 0; }
+  90% {
+    opacity: 0;
+    left: -100%;
+    top: 60%; } }
+@keyframes char-4 {
+  0% {
+    opacity: 0;
+    left: -120%;
+    top: -200%; }
+  50% {
+    opacity: .3; }
+  55%, 80% {
+    opacity: .3;
+    left: 0;
+    top: 0; }
+  90% {
+    opacity: 0;
+    left: -120%;
+    top: -200%; } }
+@keyframes char-5 {
+  0% {
+    opacity: 0;
+    left: 200%;
+    top: 120%; }
+  70% {
+    opacity: .4; }
+  75%, 80% {
+    opacity: .4;
+    left: 0;
+    top: 0; }
+  90% {
+    opacity: 0;
+    left: 200%;
+    top: 120%; } }
+
+/*# sourceMappingURL=page.css.map */
