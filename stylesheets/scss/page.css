@@ -68,22 +68,22 @@ body {
   .page-title img {
     position: relative;
     width: 300px;
-    animation: top_fade_in 1s; }
+    animation: top_fade_in .5s; }
 
 /* page-logo */
 .page-logo {
   position: absolute;
-  top: 45%;
+  top: 47%;
   left: 50%;
   width: 75px;
-  height: 100px;
+  height: 175px;
   transform: translate(-50%, -50%); }
   .page-logo img:nth-child(1) {
     width: 100%;
     position: absolute;
     left: 0;
     top: 0;
-    animation: char-1 5s;
+    animation: char-1 5s infinite;
     z-index: 1000; }
   .page-logo img:nth-child(2) {
     width: 100%;
@@ -91,28 +91,28 @@ body {
     left: 155%;
     top: -95%;
     opacity: 0;
-    animation: char-2 5s; }
+    animation: char-2 5s infinite; }
   .page-logo img:nth-child(3) {
     width: 100%;
     position: absolute;
     left: -200%;
     top: 60%;
     opacity: 0;
-    animation: char-3 5s; }
+    animation: char-3 5s infinite; }
   .page-logo img:nth-child(4) {
     width: 100%;
     position: absolute;
     left: -120%;
     top: -200%;
     opacity: 0;
-    animation: char-4 5s; }
+    animation: char-4 5s infinite; }
   .page-logo img:nth-child(5) {
     width: 100%;
     position: absolute;
     left: 200%;
     top: 120%;
     opacity: 0;
-    animation: char-5 5s; }
+    animation: char-5 5s infinite; }
 
 /* page-click */
 .page-click {
@@ -153,11 +153,11 @@ body {
     transform: rotate(0); } }
 /* char part */
 @keyframes char-1 {
-  0% {
+  0%, 100% {
     opacity: 0;
     left: 0;
     top: 0; }
-  100% {
+  90% {
     opacity: 1; } }
 @keyframes char-2 {
   0% {
