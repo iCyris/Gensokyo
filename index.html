@@ -45,18 +45,75 @@
             </a>
         </section>
         <section class="page-title">
-            <img src="./images/title.svg">
+            <div></div>
         </section>
         <section class="page-logo">
-            <img src="./images/logo_1.svg">
-            <img src="./images/logo_2.svg">
-            <img src="./images/logo_3.svg">
-            <img src="./images/logo_4.svg">
-            <img src="./images/logo_5.svg">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </section>
         <section class="page-click">
-            <img src="./images/click.svg">
+            <div></div>
+        </section>
+    </div>
+    <div class="about">
+        <section class="about-frame"></section>
+        <section class="about-close">
+            <div></div>
+            <div>
+                <i class="czs-close-l"></i>
+            </div>
+        </section>
+        <section class="about-profile">
+            <section class="about-title">
+                <div class="about-title__avatar"></div>
+            </section>
+            <section class="about-info">
+                <div class="about-info-list">
+                    <span>ID</span>
+                    <span>: </span>
+                    <span>Cyris / 绿生</span>
+                </div>
+                <div class="about-info-list">
+                    <span>Location</span>
+                    <span>: </span>
+                    <span>Hangzhou, China</span>
+                </div>
+                <div class="about-info-list">
+                    <span>Interest</span>
+                    <span>: </span>
+                    <span>Front-End Development, Design and everything about Technology</span>
+                </div>
+                <div class="about-info-list">
+                    <span>Favourite</span>
+                    <span>: </span>
+                    <span>Cat, Typeface, Spicy food, Milk, The Piano Guys, ACG</span>
+                </div>
+                <div class="about-info-list">
+                    <span>Contact</span>
+                    <span>: </span>
+                    <span>cyris#pen.moe (# -> @)</span>
+                </div>
+            </section>
         </section>
     </div>
 </body>
+<script>
+    window.onload = function () {
+        let about_page = document.getElementsByClassName("about")[0];
+        let el = document.querySelectorAll(".page-click");
+        let el_about = document.querySelectorAll(".about-close");
+
+        for(let i =0; i < el.length; i++) {
+            el[i].onclick = function() { about_page.style.display = 'block'};
+        }
+        for(let i =0; i < el_about.length; i++) {
+            el_about[i].onclick = function() { about_page.style.display = 'none'};
+        }
+    };
+    console.log("$ which cyris.moe");
+    console.log("/index");
+</script>
 </html>
