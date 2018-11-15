@@ -468,19 +468,22 @@ body {
     border: 8px solid #add2c9;
   }
   .about-profile {
-    height: auto;
+    overflow-y: scroll;
+    width: 80%;
+    height: calc(100% - 76px);
+    top: 40px;
     .about-title {
       height: 85px;
-      top: 30px;
+      top: 20px;
       .about-title__avatar {
-        top: -50px;
+        top: -60px;
       }
     }
     .about-info {
       top: 20px;
       .about-info-list {
         font-size: 10px;
-        margin-left: 40px;
+        margin-left: 50px;
         width: 80%;
       }
     }
