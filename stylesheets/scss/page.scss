@@ -329,7 +329,7 @@ body {
   border: 10px solid #add2c9;
   background-color: #faf9f9;
   border-radius: 35px;
-  box-shadow: 0 0 12px #4d4d4d inset;
+  box-shadow: 0 0 15px #4d4d4d inset;
 }
 .about-close {
   position: absolute;
@@ -396,7 +396,7 @@ body {
 .about-profile {
   position: absolute;
   display: block;
-  left: 40px;
+  left: 26px;
   width: calc(100% - 80px);
   height: calc(100% - 72px);
   font-family: "PingFang SC", "PingFang SC", yahei, serif;
@@ -453,7 +453,7 @@ body {
 }
 @keyframes about-close-button-in-mobile {
   from {transform: scale(0);}
-  to {transform: scale(.8);}
+  to {transform: scale(.7);}
 }
 @keyframes about-hover {
   100% {background-color: #dfd3c3;}
@@ -461,22 +461,25 @@ body {
 /* mobile-about */
 @media screen and (max-width: 760px){
   .about-frame {
-    top: 30px;
-    left: 30px;
-    width: calc(100% - 72px);
-    height: calc(100% - 72px);
+    top: 15px;
+    left: 15px;
+    width: calc(100% - 44.5px);
+    height: calc(100% - 44.5px);
     border: 8px solid #add2c9;
   }
   .about-profile {
     overflow-y: scroll;
-    width: 86%;
+    width: 87%;
     height: calc(100% - 76px);
     top: 40px;
     .about-title {
       height: 85px;
       top: 20px;
       .about-title__avatar {
-        top: -60px;
+        top: -68px;
+        height: 110px;
+        width: 110px;
+        background-size: 110px;
       }
     }
     .about-info {
@@ -485,10 +488,37 @@ body {
         font-size: 10px;
         margin: 0 auto;
         width: 70%;
+        line-height: 27px;
       }
     }
   }
   .about-close {
+    top: 6px;
+    right: 6px;
     animation: about-close-button-in-mobile .2s .5s forwards;
+  }
+}
+/* Click animation */
+div .clickEffect {
+  position: fixed;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: #FFFFFF;
+  border-radius: 50%;
+  animation: clickEffect 0.4s ease-out;
+  z-index: 99999;
+}
+@keyframes clickEffect {
+  0% {
+    opacity: 1;
+    width: 0.5em; height: 0.5em;
+    margin: -0.25em;
+    border-width: 0.5em;
+  }
+  100% {
+    opacity: 0.2;
+    width: 15em; height: 15em;
+    margin: -7.5em;
+    border-width: 0.03em;
   }
 }
