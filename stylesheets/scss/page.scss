@@ -467,12 +467,23 @@ body {
     height: calc(100% - 72px);
     border: 8px solid #add2c9;
   }
-  .about-title {
-    top: 20px;
-    transform: scale(.9);
-  }
-  .about-info-list {
-    font-size: 2px;
+  .about-profile {
+    height: auto;
+    .about-title {
+      height: 85px;
+      top: 30px;
+      .about-title__avatar {
+        top: -50px;
+      }
+    }
+    .about-info {
+      top: 20px;
+      .about-info-list {
+        font-size: 10px;
+        margin-left: 40px;
+        width: 80%;
+      }
+    }
   }
   .about-close {
     animation: about-close-button-in-mobile .2s .5s forwards;
