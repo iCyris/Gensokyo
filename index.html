@@ -2,6 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!--
+
+    ##################################
+
+        「探求真理者不可心存傲慢。」
+
+    ##################################
+
+    Designed by Cyris.
+
+    -->
     <title>绿生 - Cyris's</title>
     <meta name="description" content="Cyris's Website">
     <meta name="keywords" content="Cyris,cyris.moe,personal website,front-end,design">
@@ -18,11 +29,33 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'UA-120896908-3');
     </script>
 </head>
 <body>
+    <div class="preload">
+        <section class="hi">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+    </div>
+    <div class="start">
+        <section class="view1">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+        <section class="view2">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+        <section class="view3"></section>
+    </div>
     <div class="main">
         <section class="page-frame">
             <div></div>
@@ -102,7 +135,13 @@
 </body>
 <script>
     window.onload = function () {
+        let preload_page = document.getElementsByClassName("preload")[0];
+        let start_page = document.getElementsByClassName('start')[0];
+        let main_page = document.getElementsByClassName('main')[0];
         let about_page = document.getElementsByClassName("about")[0];
+
+        setTimeout(function(){preload_page.style.display="none";start_page.style.display='block'},2350);
+
         let el = document.querySelectorAll(".page-click");
         let el_about = document.querySelectorAll(".about-close");
 
@@ -112,8 +151,16 @@
         for(let i =0; i < el_about.length; i++) {
             el_about[i].onclick = function() { about_page.style.display = 'none'};
         }
-    };
 
+        (function() {
+            start_page.addEventListener('animationend', function(e) {
+                if(e.animationName === 'show-main-page') {
+                    start_page.style.display = 'none';
+                    main_page.style.display = 'block';
+                }
+            })
+        })();
+    };
     console.log("$ which cyris.moe");
     console.log("/index");
 </script>

@@ -5,16 +5,158 @@
 body {
   font-family: Roboto, serif;
 }
-.main {
+/**
+ * preload
+ */
+.preload,
+.start {
   position: absolute;
   display: block;
+  height: 100%;
+  width: 100%;
+  background-color: #4d4545;
+  overflow: hidden;
+}
+.preload {
+  z-index: 99998;
+  text-align: center;
+  .hi {
+    position: relative;
+    display: block;
+    height: 20vmin;
+    width: 13vmin;
+    opacity: 1;
+    border: #ffffff 4px solid;
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-top: 62vmin;
+    transform: translate(0, -100%);
+    transform-origin: center;
+    transition: ease;
+    animation: hi 1.5s 1.3s infinite;
+    div {
+      position: absolute;
+      height: 5vmin;
+      width: 13vmin;
+      transition: ease;
+      opacity: 0;
+    }
+    div:nth-child(1) {
+      background-color: #7c7575;
+      bottom: 0;
+      animation: fade_in .5s forwards;
+    }
+    div:nth-child(2) {
+      background-color: #b8b0b0;
+      bottom: 5vmin;
+      animation: fade_in .5s .4s forwards;
+    }
+    div:nth-child(3) {
+      background-color: #dfd3d3;
+      bottom: 10vmin;
+      animation: fade_in .5s .8s forwards;
+    }
+    div:nth-child(4) {
+      background-color: #fbf0f0;
+      bottom: 15vmin;
+      animation: fade_in .5s 1.2s forwards;
+    }
+  }
+}
+/**
+ * start
+ */
+.start {
+  display: none; /* wait for delete */
+  z-index: 99999;
+  .view1 {
+
+  }
+  .view2 {
+    position: absolute;
+    width: 100vmax;
+    height: 100vmax;
+    div {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      margin: 0 auto;
+      transition: ease-in-out;
+    }
+    div:nth-child(1) {
+      background-color: #faf8d7;
+      top: 0; left: 0;
+      transform-origin: left top;
+      transform: rotate(-90deg);
+    }
+    div:nth-child(2) {
+      background-color: #acc6aa;
+      top: 0; left: 0;
+      transform-origin: left top;
+      transform: rotate(-90deg);
+    }
+    div:nth-child(3) {
+      background-color: #eeeeee;
+      top: 0; right: 0;
+      transform-origin: right bottom;
+      transform: rotate(-90deg);
+    }
+    div:nth-child(4) {
+      background-color: #393e46;
+      top: 0; right: 0;
+      transform-origin: right bottom;
+      transform: rotate(-90deg);
+    }
+  }
+}
+/*************************************************************
+    Keyframes - preload + start
+ *************************************************************/
+@keyframes route90 {
+  0% {transform: rotate(-90deg);}
+  100% {transform: rotate(0deg);}
+}
+@keyframes route90-fadeout {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(90deg);}
+}
+@keyframes show-main-page {
+  to {background-color: #ffffff}
+}
+@keyframes hi {
+  0% {margin-top: 62vmin;}
+  15% {margin-top: 58vmin;}
+  30% {margin-top: 66vmin}
+  45% {margin-top: 58vmin;}
+  60% {margin-top: 66vmin}
+}
+/*************************************************************
+    Animations - preload + start
+ *************************************************************/
+.start {
+  animation: show-main-page .2s 1.2s forwards; /* total */
+  .view2 {
+    div:nth-child(1){animation: route90 .4s forwards;}
+    div:nth-child(2){animation: route90 .4s 0.15s forwards;}
+    div:nth-child(3){animation: route90 .4s 0.6s forwards;}
+    div:nth-child(4){animation: route90 .4s 0.75s forwards;}
+  }
+}
+/**
+ * main page
+ */
+.main {
+  position: absolute;
+  display: none;
   height: 100%;
   width: 100%;
   background-image: url("../../images/diandian.svg");
   background-size: 30px;
   z-index: 100;
 }
-/* page-frame */
+/**
+ * page-frame
+ */
 .page-frame {
   position: absolute;
   top: 30px;
@@ -54,7 +196,9 @@ body {
     border-bottom: #666666 dashed 3px;
   }
 }
-/* page-title */
+/**
+ * page-title
+ */
 .page-title {
   position: absolute;
   display: block;
@@ -73,7 +217,9 @@ body {
     background-size: 300px;
   }
 }
-/* page-logo */
+/**
+ * page-logo
+ */
 .page-logo {
   position: absolute;
   top: 47%;
@@ -137,7 +283,9 @@ body {
     animation: char-5 5s infinite;
   }
 }
-/* page-click */
+/**
+ * page-click
+ */
 .page-click {
   position: absolute;
   right: 75px;
@@ -160,10 +308,16 @@ body {
     cursor: pointer;
   }
 }
-/* animation part-1 */
+/**
+ * Animation - main page
+ */
 @keyframes fade_in {
     0% {opacity: 0;}
     100% {opacity: 1;}
+}
+@keyframes fade_out {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
 }
 @keyframes top_fade_in {
   from {
@@ -180,7 +334,9 @@ body {
   20%, 40%, 60% {transform: rotate(3deg);}
   70%, 100% {transform: rotate(0);}
 }
-/* char part */
+/**
+ * char part
+ */
 @keyframes char-1 {
   0%, 90%, 100% {opacity: 0; left: 0; top: 0;}
   80% {opacity: 1;}
@@ -209,7 +365,9 @@ body {
   75%, 80% {opacity: .4; left: 0; top: 0;}
   90% {opacity: 0; left: 200%; top: 120%;}
 }
-/* page-nav */
+/**
+ * page-nav
+ */
 .page-nav {
   position: absolute;
   top: 31%;
@@ -259,7 +417,9 @@ body {
   from {opacity: 0; transform: scale(0.4);}
   to {opacity: 1; transform: scale(1);}
 }
-/* mobile */
+/**
+ * mobile
+ */
 @media screen and (max-width: 760px){
   .page-frame {
     position: absolute;
@@ -306,7 +466,9 @@ body {
     }
   }
 }
-/* About page start */
+/**
+ * About page
+ */
 .about {
   position: absolute;
   display: none;
@@ -318,7 +480,7 @@ body {
   background-image: url("../../images/diandian.svg");
   z-index: 1000;
   opacity: 0;
-  animation: about-page-fade-in .5s forwards;
+  animation: about-page-fade-in .6s forwards;
 }
 .about-frame {
   position: absolute;
@@ -458,7 +620,9 @@ body {
 @keyframes about-hover {
   100% {background-color: #dfd3c3;}
 }
-/* mobile-about */
+/**
+ * mobile-about
+ */
 @media screen and (max-width: 760px){
   .about-frame {
     top: 15px;
@@ -496,29 +660,5 @@ body {
     top: 6px;
     right: 6px;
     animation: about-close-button-in-mobile .2s .5s forwards;
-  }
-}
-/* Click animation */
-div .clickEffect {
-  position: fixed;
-  box-sizing: border-box;
-  border-style: solid;
-  border-color: #FFFFFF;
-  border-radius: 50%;
-  animation: clickEffect 0.4s ease-out;
-  z-index: 99999;
-}
-@keyframes clickEffect {
-  0% {
-    opacity: 1;
-    width: 0.5em; height: 0.5em;
-    margin: -0.25em;
-    border-width: 0.5em;
-  }
-  100% {
-    opacity: 0.2;
-    width: 15em; height: 15em;
-    margin: -7.5em;
-    border-width: 0.03em;
   }
 }
