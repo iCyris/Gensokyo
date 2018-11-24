@@ -3,15 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <!--
+    ################################
 
-    ##################################
+       「 Always look forward. 」
 
-        「探求真理者不可心存傲慢。」
+    ################################
 
-    ##################################
-
-    Designed by Cyris.
-
+    Created by Cyris.
     -->
     <title>绿生 - Cyris's</title>
     <meta name="description" content="Cyris's Website">
@@ -34,27 +32,65 @@
 </head>
 <body>
     <div class="preload">
-        <section class="hi">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </section>
+        <div class="pre-logo"></div>
+        <div class="pre-bg"></div>
+        <div class="pre-wait"></div>
+        <div class="pre-skip">
+            <span>skip</span>
+        </div>
     </div>
-    <div class="start">
-        <section class="view1">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+    <div class="views">
+        <section class="view-1">
+            <div class="v1-open">
+                <div></div><div></div>
+                <div></div><div></div>
+            </div>
+            <div class="v1-shine">
+                <div class="biu part-1">
+                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                </div>
+                <div class="biu part-2">
+                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                </div>
+                <div class="biu part-3">
+                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                </div>
+                <div class="biu part-4">
+                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                </div>
+            </div>
+            <div class="v1-shutter">
+                <div class="ball">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="shutter">
+                    <div></div><div></div>
+                    <div></div><div></div>
+                    <div></div><div></div>
+                    <div></div><div></div>
+                </div>
+                <div class="decorate">
+                    <div class="line-shine"><div></div></div>
+                    <div class="line-shine"></div>
+                    <div class="cicle-shine"></div>
+                    <div class="cicle-shine"></div>
+                    <div class="cicle-shine"></div>
+                    <div class="cicle-shine"></div>
+                    <div class="normal-shine"></div>
+                    <div class="normal-shine"></div>
+                </div>
+            </div>
+            <div class="v1-close">
+                <div></div><div></div><div></div>
+            </div>
         </section>
-        <section class="view2">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+        <section class="view-2">
+            <div class="v2-open v2-open__part-1">
+                <div></div><div></div><div></div><div></div>
+            </div>
         </section>
-        <section class="view3"></section>
     </div>
     <div class="main">
         <section class="page-frame">
@@ -133,35 +169,5 @@
         </section>
     </div>
 </body>
-<script>
-    window.onload = function () {
-        let preload_page = document.getElementsByClassName("preload")[0];
-        let start_page = document.getElementsByClassName('start')[0];
-        let main_page = document.getElementsByClassName('main')[0];
-        let about_page = document.getElementsByClassName("about")[0];
-
-        setTimeout(function(){preload_page.style.display="none";start_page.style.display='block'},2350);
-
-        let el = document.querySelectorAll(".page-click");
-        let el_about = document.querySelectorAll(".about-close");
-
-        for(let i =0; i < el.length; i++) {
-            el[i].onclick = function() { about_page.style.display = 'block'};
-        }
-        for(let i =0; i < el_about.length; i++) {
-            el_about[i].onclick = function() { about_page.style.display = 'none'};
-        }
-
-        (function() {
-            start_page.addEventListener('animationend', function(e) {
-                if(e.animationName === 'show-main-page') {
-                    start_page.style.display = 'none';
-                    main_page.style.display = 'block';
-                }
-            })
-        })();
-    };
-    console.log("$ which cyris.moe");
-    console.log("/index");
-</script>
+<script src="./scripts/page.js"></script>
 </html>
