@@ -1,18 +1,18 @@
 window.onload = function () {
     let preload = document.getElementsByClassName("preload")[0];
-    let views = document.getElementsByClassName('views')[0];
+    let chapters = document.getElementsByClassName('chapters')[0];
     let main_page = document.getElementsByClassName('main')[0];
     let about_page = document.getElementsByClassName("about")[0];
     let skip = document.querySelectorAll(".pre-skip");
     let click = document.querySelectorAll(".page-click");
     let close = document.querySelectorAll(".about-close");
 
-    setTimeout(function(){views.style.display='block';}, 3200);
+    setTimeout(function(){chapters.style.display='block';}, 3200);
 
     (function() {
-        views.addEventListener('animationend', function(e) {
+        chapters.addEventListener('animationend', function(e) {
             if(e.animationName === 'show-main-page') {
-                views.style.animation = 'fade_out 1s forwards';
+                chapters.style.animation = 'fade_out 1s forwards';
                 main_page.style.display = 'block';
             }
         })
