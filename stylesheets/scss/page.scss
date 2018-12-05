@@ -646,12 +646,15 @@ body {
     border: #393e46 dashed 3px;
     border-radius: 5px;
   }
+  .about-frame {
+    div { height: 60px;}
+  }
   .about {
     .title {
       width: 85%; height: 35px;
       span {font-size: 23px; line-height: 35px;}
     }
-    .subtitle {width: 80%; height: 20px;}
+    .subtitle {width: 85%; height: 20px;}
     .subtitle:before {height: 0.5px;}
     .avatar {
       background-size: 90px;
