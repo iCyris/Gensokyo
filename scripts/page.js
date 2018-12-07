@@ -7,12 +7,12 @@ window.onload = function () {
     let click = document.querySelectorAll(".page-click");
     let close = document.querySelectorAll(".about-close");
 
-    setTimeout(function(){chapters.style.display='block';}, 3200);
+    setTimeout(function(){chapters.style.display='block';}, 2400);
+    setTimeout(function(){preload.remove();}, 4750);
 
     (function() {
         chapters.addEventListener('animationend', function(e) {
-            if(e.animationName === 'show-main-page') {
-                chapters.style.animation = 'fade_out 1s forwards';
+            if(e.animationName === 'fade_out') {
                 main_page.style.display = 'block';
             }
         })

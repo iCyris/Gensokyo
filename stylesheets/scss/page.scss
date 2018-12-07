@@ -18,29 +18,141 @@ body {
 /**
  * preload
  */
-
+.preload {
+  position: absolute;
+  width: 100%; height: 100%;
+  box-shadow: 0 0 25vmin #323539 inset;
+}
+.pre-chars {
+  position: absolute;
+  width: 20vmin; height: 20vmin;
+  left: calc(50% - 10vmin); top: calc(50% - 10vmin);
+  background-size: 30vmin;
+  opacity: .9;
+  span {
+    opacity: 0;
+    position: absolute;
+    width: inherit; height: inherit;
+    background-repeat: no-repeat;
+  }
+  span:nth-child(1) {background-image: url("../../images/pre-1__1.svg");}
+  span:nth-child(2) {background-image: url("../../images/pre-1__2.svg");}
+  span:nth-child(3) {background-image: url("../../images/pre-2__1.svg");}
+  span:nth-child(4) {background-image: url("../../images/pre-2__2.svg");}
+  span:nth-child(1), span:nth-child(2) {
+    background-position: left top;
+    margin-top: -5vmin;
+    margin-left: -10vmin;
+  }
+  span:nth-child(3), span:nth-child(4) {
+    background-position: right bottom;
+    margin-top: 5vmin;
+    margin-left: 10vmin;
+  }
+}
+.pre-cicles {
+  position: absolute;
+  width: 60vmin; height: 60vmin;
+  left: calc(50% - 30vmin); top: calc(50% - 30vmin);
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  div {
+    opacity: 0;
+    position: absolute;
+    width: inherit; height: inherit;
+    border-radius: 50%;
+  }
+  div::after {
+    content: "";
+    position: absolute;
+    border: 1.5px solid #323539;
+    width: inherit; height: inherit;
+    border-radius: 50%;
+  }
+}
+.pre-wait {
+  position: absolute;
+  width: 20vmin; height: 20vmin;
+  right: 5vmin; bottom:5vmin;
+  display: flex;
+  flex-wrap: wrap;
+  border: #323539 2px dashed;
+  opacity: 0;
+  div {
+    width: 10vmin; height: 10vmin;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 5vmin;
+    color: #323539;
+    line-height: 10vmin;
+  }
+  div:nth-child(1)  {border-bottom: #323539 2px dashed; border-right: #323539 2px dashed; }
+  div:nth-child(2) {border-bottom: #323539 2px dashed; color: #b86268;}
+  div:nth-child(3) {border-right: #323539 2px dashed;}
+}
 /*************************************************************
-    Animations - preload
+    Keyframes - preload
  *************************************************************/
+@keyframes pre-left-in {
+  from {transform: translateX(-5vmin); opacity: 0;}
+  to   {transform: translateX(0vmin); opacity: 1;}
+}
+@keyframes pre-right-in {
+  from {transform: translateX(5vmin); opacity: 0;}
+  to   {transform: translateX(0vmin); opacity: 1;}
+}
+@keyframes pre-top-in {
+  from {transform: translateY(-5vmin); opacity: 0;}
+  to   {transform: translateY(0vmin); opacity: 1;}
+}
+@keyframes pre-bottom-in {
+  from {transform: translateY(5vmin); opacity: 0;}
+  to   {transform: translateY(0vmin); opacity: 1;}
+}
+@keyframes pre-cicle-rotate {
+  from {transform: rotateX(0) rotateY(0);}
+  to   {transform: rotateX(360deg) rotateY(360deg);}
+}
+/*************************************************************
+    Animationsr - preload
+ *************************************************************/
+.pre-chars {
+  span:nth-child(1){ animation: pre-left-in ease-out   .6s forwards ;}
+  span:nth-child(2){ animation: pre-right-in ease-out  .6s forwards ;}
+  span:nth-child(3){ animation: pre-top-in ease-out    .6s forwards ;}
+  span:nth-child(4){ animation: pre-bottom-in ease-out .6s forwards ;}
+}
+.pre-cicles {
+  div {animation: fade_in .1s linear .5s forwards, scale0-1 .6s linear .5s forwards ;}
+  div:nth-child(1)::after { animation: pre-cicle-rotate 3.5s linear .1s forwards infinite ;}
+  div:nth-child(2)::after { animation: pre-cicle-rotate 3.5s linear .3s forwards infinite ;}
+  div:nth-child(3)::after { animation: pre-cicle-rotate 3.5s linear .5s forwards infinite ;}
+}
+.pre-wait { animation: fade_in ease 1s .5s forwards ;}
 /**
  * chapters
  */
-.chapters { display: none; }
-.chapters{
+.chapters {
   position: absolute;
   width: 100%; height: 100%;
   overflow: hidden;
 }
-.v2-open {
-  position:absolute; display:flex;
-  top:0; left:0;
-  width:100%; height:100%;
-  div {
-    opacity: 0;
-    width: 25%; height: 100%;
-  }
+.chapter-1 {
+  width: inherit; height: inherit;
+  position: absolute;
 }
-.v2-open__part-1 div {background-color: #ffffff;}
+.c1-show {
+  width: 5vmin; height: 5vmin;
+  position: absolute;
+  left: calc(50% - 2.5vmin); top: calc(50% - 2.5vmin);
+  div {
+    position: absolute;
+    width: inherit; height: inherit;
+  }
+  div:nth-child(1) {background-color: #f9f8ed;}
+  div:nth-child(2) {background-color: #c4e3cb;}
+  div:nth-child(3) {background-color: #6a9c78;}
+}
 /*************************************************************
     Keyframes - chapters
  *************************************************************/
@@ -56,36 +168,39 @@ body {
   0% {transform: rotate(-90deg);}
   100% {transform: rotate(0deg);}
 }
-@keyframes route-1-turn {
-  from {transform: rotate(0);}
-  to {transform: rotate(-1turn);}
-}
-@keyframes route3d-type1 {
-  from {transform: rotateX(0.5turn); opacity: 0;}
-  to {transform: rotateX(1turn); opacity: 1;}
-}
 @keyframes scale0-1 {
   0% {transform: scale(0);}
   100% {transform: scale(1);}
 }
-@keyframes scale2-1 {
-  0% {transform: scale(1.3);}
-  100% {transform: scale(1);}
+@keyframes scale1-fill {
+  0% {transform: rotate(45deg) scale(1);}
+  100% {transform: rotate(45deg) scale(100);}
 }
-@keyframes show-main-page {
-  to {background-color: #ffffff}
+@keyframes c1-in {
+  0% {opacity: 0; transform: rotate(0) translateY(-10vmin);}
+  20%{opacity: 1; transform: rotate(0) translateY(0);}
+  40%{opacity: 1; transform: rotate(-45deg);}
+  60%, 100% {transform: rotate(45deg);}
 }
 /*************************************************************
     Animations - chapters
  *************************************************************/
-.chapters { animation: show-main-page 0.1s ease 8.5s forwards; } /* total */
-
-.v2-open__part-1 {
-  div:nth-child(1) { animation: fade_in .04s linear 8.0s 3 alternate forwards }
-  div:nth-child(2) { animation: fade_in .04s linear 8.1s 3 alternate forwards }
-  div:nth-child(3) { animation: fade_in .04s linear 8.2s 3 alternate forwards }
-  div:nth-child(4) { animation: fade_in .04s linear 8.3s 3 alternate forwards }
+.chapters { animation: fade_out .2s ease 2.4s forwards; } /* total */
+.c1-show {
+  div:nth-child(1) {
+    animation: c1-in 2s linear forwards,
+    scale1-fill 1s linear 1.2s forwards;
+  }
+  div:nth-child(2) {
+    animation: c1-in 2s linear forwards,
+    scale1-fill 1s linear 1.3s forwards;
+  }
+  div:nth-child(3) {
+    animation: c1-in 2s linear forwards,
+    scale1-fill 1s linear 1.4s forwards;
+  }
 }
+
 /**
  * main page
  */
@@ -720,4 +835,4 @@ body {
 }
 .about-close {animation: about-close-in .8s ease-in-out .9s forwards}
 .about-content {animation: fade_in .4s ease-in 1s forwards}
-.about, .preload, .chapters {display: none}
+.chapters, .main, .about {display: none}
