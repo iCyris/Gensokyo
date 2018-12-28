@@ -1,0 +1,195 @@
+/*************************************************************
+    Keyframes - chapter 1
+ *************************************************************/
+@keyframes c1-in {
+  from {
+    opacity: 0;
+    transform: translateY(-20vmin) rotate(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0vmin) rotate(0.5turn);
+  }
+}
+//fall
+@keyframes switch1-1{
+  from {transform: translateY(-100%) rotate(-15deg); transform-origin: left bottom;}
+  to {transform: translateY(0%) rotate(0);}
+}
+@keyframes switch1-2{
+  from {transform: translateY(-100%) rotate(15deg); transform-origin: right bottom;}
+  to {transform: translateY(0%) rotate(0);}
+}
+//rotate
+@keyframes switch2-1 {
+  from {transform: rotate(-90deg); transform-origin: right bottom;}
+  to {transform: rotate(0);}
+}
+@keyframes switch2-2 {
+  from {transform: rotate(90deg); transform-origin: left bottom;}
+  to {transform: rotate(0);}
+}
+@keyframes switch3-1 {
+  from {transform: rotate(90deg); transform-origin: left top;}
+  to {transform: rotate(0);}
+}
+@keyframes switch3-2 {
+  from {transform: rotate(90deg); transform-origin: right top;}
+  to {transform: rotate(0);}
+}
+@keyframes switch4-1 {
+  from {transform: translateY(100%) rotate(90deg);}
+  to {transform: translateY(0%) rotate(0);}
+}
+@keyframes switch4-2 {
+  from {transform: translateY(100%) rotate(-90deg);}
+  to {transform: translateY(0%) rotate(0);}
+}
+@keyframes open-title-1 {
+  0% {
+    transform-origin: top;
+    transform: translateY(-100%);
+  }
+  40% {
+    transform: translateY(-50%);
+  }
+  47% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(-60%);
+  }
+}
+@keyframes close-title-1 {
+  0% {
+    transform-origin: top;
+    transform: translateY(-60%);
+  }
+  40% {
+    transform: translateY(-50%);
+  }
+  47% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+@keyframes open-title-2 {
+  0% {
+    transform-origin: top;
+    transform: translateY(100%);
+  }
+  40% {
+    transform: translateY(50%);
+  }
+  47% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(60%);
+  }
+}
+@keyframes close-title-2 {
+  0% {
+    transform-origin: top;
+    transform: translateY(60%);
+  }
+  40% {
+    transform: translateY(50%);
+  }
+  47% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+//type3 for cloud in / out
+@keyframes slide-in__type3 {
+  from {
+    transform: translateY(calc(-100% - 15vh));
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+@keyframes slide-out__type3 {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(calc(-100% - 15vh));
+  }
+}
+@keyframes slide-out__ab {
+  from {transform: scale(1) translateY(0);}
+  to {transform: scale(1) translateY(100vmin);}
+}
+@keyframes nt-clothes-1 {
+  from {transform: rotate(30deg);}
+  to {transform: rotate(15deg)}
+}
+@keyframes nt-clothes-2 {
+  from {transform: rotate(-30deg);}
+  to {transform: rotate(-15deg)}
+}
+@keyframes stars-up {
+  from {transform: translateY(calc(50% + 5vmin));}
+  to {transform: translateY(calc(-50% - 5vmin));}
+}
+@keyframes c1-slogan-in__type1 {
+  from {
+    transform: scale(1.8) rotate(3deg);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) rotate(-0.5deg);
+    opacity: .2;
+  }
+}
+@keyframes c1-slogan-in__type2 {
+  from {
+    transform: scale(1.8) rotate(-3deg);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) rotate(0.5deg);
+    opacity: .2;
+  }
+}
+@keyframes c1-slogan-in__type3 {
+  from {
+    transform: scale(1.8) rotate(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) rotate(0);
+    opacity: .6;
+  }
+}
+@keyframes lights-in {
+  from {transform: translateY(-100%);}
+  to {transform: translateY(100%);}
+}
+@keyframes c1-sunny-title__in {
+  0% {transform: translateY(20%);}
+  100% {transform: translateY(0%);}
+}
+@keyframes c1-seed-diamonds__out {
+  0% {transform: rotate(0); opacity: 1;}
+  100% {transform: rotate(-90deg); opacity: 0;}
+}
+@keyframes c1-seed-bg__in {
+  0% {transform: translateY(15%); opacity: 0;}
+  100% {transform: translateY(0%); opacity: .4;}
+}
+//c1-seed
+@keyframes c1-seed-route-1 {
+  0% {transform: translateX(-50vw) scale(2) rotateY(0);}
+  100% {transform: translateX(0vw) scale(1) rotateY(4turn);}
+}
+@keyframes c1-seed-route-2 {
+  0% {transform: translateX(50vw) scale(2) rotateY(0);}
+  100% {transform: translateX(0vw) scale(1) rotateY(4turn);}
+}
