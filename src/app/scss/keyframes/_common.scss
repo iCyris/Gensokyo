@@ -2,117 +2,113 @@
     Keyframes - common
  *************************************************************/
 @keyframes fade_in {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 @keyframes fade_out {
-  0% {opacity: 1;}
-  100% {opacity: 0;}
+    0% {opacity: 1;}
+    100% {opacity: 0;}
 }
 @keyframes rotate {
-  0% {transform: rotate(0deg);}
-  100% {transform: rotate(360deg);}
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
 }
 @keyframes rotate-1 {
-  0% {transform: rotate(0deg);}
-  100% {transform: rotate(-360deg);}
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-360deg);}
 }
 @keyframes rotate90 {
-  0% {transform: rotate(0deg);}
-  100% {transform: rotate(90deg);}
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(90deg);}
 }
 @keyframes rotate90-0 {
-  0% {transform: rotate(90deg);}
-  100% {transform: rotate(0deg);}
+    0% {transform: rotate(90deg);}
+    100% {transform: rotate(0deg);}
 }
 @keyframes rotate90-0-n {
-  0% {transform: rotate(-90deg);}
-  100% {transform: rotate(0deg);}
+    0% {transform: rotate(-90deg);}
+    100% {transform: rotate(0deg);}
 }
 @keyframes rotate180 {
-  0% {transform: rotate(0);}
-  100% {transform: rotate(180deg);}
+    0% {transform: rotate(0);}
+    100% {transform: rotate(180deg);}
 }
 @keyframes scale0-1 {
-  0% {transform: scale(0);}
-  100% {transform: scale(1);}
+    0% {transform: scale(0);}
+    100% {transform: scale(1);}
 }
 @keyframes scale1-0 {
-  0% {transform: scale(1);}
-  100% {transform: scale(0);}
+    0% {transform: scale(1);}
+    100% {transform: scale(0);}
 }
 @keyframes scale1-fill {
-  0% {transform: rotate(0deg) scale(1);}
-  100% {transform: rotate(90deg) scale(100);}
+    0% {transform: rotate(0deg) scale(1);}
+    100% {transform: rotate(90deg) scale(100);}
 }
 @keyframes scale-fade-in {
-  0% {transform: scale(0); opacity: 0;}
-  100% {transform: scale(1); opacity: 1;}
+    0% {transform: scale(0); opacity: 0;}
+    100% {transform: scale(1); opacity: 1;}
 }
 @keyframes scale0-2 {
-  0% {transform: scale(0);}
-  100% {transform: scale(2);}
+    0% {transform: scale(0);}
+    100% {transform: scale(2);}
 }
 @keyframes width0-1 {
-  from {width: 0;}
-  to {width: 100%;}
+    from {width: 0;}
+    to {width: 100%;}
 }
 @keyframes height0-1 {
-  from {height: 0;}
-  to {height: 100%;}
+    from {height: 0;}
+    to {height: 100%;}
 }
 @keyframes slide-in {
-  to {transform: translateY(0);}
+    to {transform: translateY(0);}
 }
 @keyframes slide-out {
-  to {transform: translateY(100%);}
+    to {transform: translateY(100%);}
 }
 
 @keyframes slide-in__type1 {
-  from {
-    transform: translateY(-100%);
-  }
-  to {
-    transform: translateY(0%);
-  }
+    from {
+        transform: translateY(-100%);
+    } to {
+        transform: translateY(0%);
+    }
 }
 @keyframes slide-out__type1 {
-  from {
-    transform: translateY(0%);
-  }
-  to {
-    transform: translateY(-100%);
-  }
+    from {
+        transform: translateY(0%);
+    } to {
+        transform: translateY(-100%);
+    }
 }
 @keyframes slide-in__type2 {
-  from {
-    transform: translateY(100%);
-  }
-  to {
-    transform: translateY(0%);
-  }
+    from {
+        transform: translateY(100%);
+    } to {
+        transform: translateY(0%);
+    }
 }
 @keyframes slide-out__type2 {
-  from {
-    transform: translateY(0%);
-  }
-  to {
-    transform: translateY(100%);
-  }
+    from {
+        transform: translateY(0%);
+    } to {
+        transform: translateY(100%);
+}
 }
 @keyframes slide-left {
-  from {transform: translateX(0%);}
-  to {transform: translateX(-100%);}
+    from {transform: translateX(0%);}
+    to {transform: translateX(-100%);}
 }
 @keyframes slide-right {
-  from {transform: translateX(0%);}
-  to {transform: translateX(100%);}
+    from {transform: translateX(0%);}
+    to {transform: translateX(100%);}
 }
 @keyframes left-slide-in {
-  from {transform: translateX(-100%);}
-  to {transform: translateX(0);}
+    from {transform: translateX(-100%);}
+    to {transform: translateX(0);}
 }
 @keyframes right-slide-in {
-  from {transform: translateX(100%);}
-  to {transform: translateX(0%);}
+    from {transform: translateX(100%);}
+    to {transform: translateX(0%);}
 }

@@ -2,22 +2,22 @@
     Keyframes - preload
  *************************************************************/
 @keyframes pre-left-in {
-  from {transform: translateX(-5vmin); opacity: 0;}
-  to   {transform: translateX(0vmin); opacity: 1;}
+      from {transform: translateX(-5vmin); opacity: 0;}
+      to   {transform: translateX(0vmin); opacity: 1;}
 }
 @keyframes pre-right-in {
-  from {transform: translateX(5vmin); opacity: 0;}
-  to   {transform: translateX(0vmin); opacity: 1;}
+      from {transform: translateX(5vmin); opacity: 0;}
+      to   {transform: translateX(0vmin); opacity: 1;}
 }
 @keyframes pre-top-in {
-  from {transform: translateY(-5vmin); opacity: 0;}
-  to   {transform: translateY(0vmin); opacity: 1;}
+      from {transform: translateY(-5vmin); opacity: 0;}
+      to   {transform: translateY(0vmin); opacity: 1;}
 }
 @keyframes pre-bottom-in {
-  from {transform: translateY(5vmin); opacity: 0;}
-  to   {transform: translateY(0vmin); opacity: 1;}
+      from {transform: translateY(5vmin); opacity: 0;}
+      to   {transform: translateY(0vmin); opacity: 1;}
 }
 @keyframes pre-cicle-rotate {
-  from {transform: rotateX(0) rotateY(0);}
-  to   {transform: rotateX(360deg) rotateY(360deg);}
+      from {transform: rotateX(0) rotateY(0);}
+      to   {transform: rotateX(360deg) rotateY(360deg);}
 }
