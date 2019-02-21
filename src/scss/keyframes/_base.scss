@@ -1,0 +1,43 @@
+/*
+ * Keyframes - base
+ */
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeout {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+@keyframes left-slide-in {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+@keyframes right-slide-in {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+@keyframes top-slide-in {
+    from { transform: translateY(-100%); }
+    to { transform: translateX(0); }
+}
+@keyframes bottom-slide-in {
+    from { transform: translateY(100%); }
+    to { transform: translateX(0); }
+}
+@keyframes scale0-1 {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+@keyframes rotate-1-turn {
+    from { transform: rotate(0); }
+    to { transform: rotate(1turn); }
+}
+@keyframes rotate90-0 {
+    from { transform: rotate(90deg); }
+    to { transform: rotate(0); }
+}
+@keyframes rotate0-n90 {
+    from { transform: rotate(0); }
+    to { transform: rotate(-90deg); }
+}

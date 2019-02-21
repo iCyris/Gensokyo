@@ -1,6 +1,6 @@
-# 「 绿生 」
+# 『 绿生的幻想乡 』
 
-My design portfolio v1.
+My design portfolio v2.
 
 🎉 https://cyris.moe/ 🎉
 

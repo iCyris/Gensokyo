@@ -1,0 +1,36 @@
+/*
+ * Profile Page (sp)
+ */
+@media screen and (max-width: 800px) {
+    .hearder {
+        margin-top: 15vmin;
+    }
+    .avatar {
+        width: 90px; height: 90px;
+        background-size: 90px;
+        border: 3px solid $theme-index-black;
+        margin-top: 9vmin;
+    }
+    .author {
+        width: 25vmin; height: 6vmin;
+        line-height: 6vmin;
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: -1.5vmin;
+        &::before { width: 2vmin; }
+    }
+    .description {
+        width: $width-profile-content__sp;
+        margin-top: 10vmin;
+        font-size: 15px;
+        line-height: 26px;
+        letter-spacing: 1.5px;
+    }
+    .title {
+        width: $width-profile-content__sp;
+        height: 8vmin;
+        line-height: 8vmin;
+        margin-top: 9vmin;
+        &::before, &::after { width: 70%; }
+    }
+}
