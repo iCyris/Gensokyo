@@ -21,3 +21,4 @@ code {
     left: 0; top: 0;
     overflow: hidden;
 }
+::selection { color: $theme-index-white; background-color: $theme-profile-blue-green; }

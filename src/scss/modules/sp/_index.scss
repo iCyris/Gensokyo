@@ -15,4 +15,11 @@
             line-height: 42px;
         }
     }
+    #index-button {
+        width: 20vmin; height: 20vmin;
+    }
+    #index-button[data-state='true'] .btn-main .short-id-2 span {
+        &:nth-child(2) { transform: translateY(-3vmin); }
+        &:nth-child(3) { transform: translateY( 3vmin); }
+    }
 }
