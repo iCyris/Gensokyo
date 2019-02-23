@@ -2,7 +2,7 @@
  * Profile Page (sp)
  */
 @media screen and (max-width: 800px) {
-    .hearder {
+    .header {
         height: 15vmin;
         margin-top: 30vmin;
         background-size: 80vmin;
@@ -11,7 +11,7 @@
         width: 35vmin; height: 35vmin;
         background-size: 35vmin;
         border: 3px solid $theme-index-black;
-        margin-top: 12vmin;
+        margin-top: 15vmin;
     }
     .author {
         width: 35vmin; height: 9vmin;
@@ -23,7 +23,7 @@
         &::before { width: 3vmin; }
     }
     .description, .paragraph { width: $width-profile-content__sp; }
-    .description { margin-top: 11vmin; }
+    .description { margin-top: 13vmin; }
     .paragraph   { margin-top: 8vmin;  }
     .title {
         width: $width-profile-content__sp;
@@ -32,5 +32,10 @@
         font-size: 20px;
         margin-top: 12vmin;
         &::before, &::after { width: 75%; }
+    }
+    .information {
+        width: $width-profile-content__sp;
+        box-shadow: 0 0 6px #9f9f9f;;
+        margin-top: 10vmin;
     }
 }
