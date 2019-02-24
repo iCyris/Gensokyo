@@ -84,7 +84,7 @@
     font-weight: 500;
     &::before, &::after {
         position: absolute; content: "";
-        width: 70%; height: 2px;
+        width: 65%; height: 2px;
         background-color: $theme-index-black;
     }
     &::before { left: 0; top: 0; }
@@ -151,16 +151,16 @@
     width: $width-profile-content;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin: 0 auto;
     margin-top: 5vmin;
     a {
         position: relative;
-        width: 48%;
+        width: 49%;
         box-sizing: border-box;
         padding: 6px;
         color: #4c4c4c;
         background-color: #fff;
-        margin-right: 2%;
         margin-bottom: 2vmin;
         box-shadow: 0 0 6px #9f9f9f;
         text-align: left;
