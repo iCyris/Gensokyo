@@ -10,8 +10,8 @@
         transform: rotate(90deg);
         transform-origin: right top;
     }
-    span:nth-child(1) { background-color: $theme-profile-blue; }
-    span:nth-child(2) { background-color: $theme-profile-green; }
+    span:nth-child(1) { background-color: $theme-profile-green; }
+    span:nth-child(2) { background-color: $theme-profile-green-light; }
     span:nth-child(3) { background-color: $theme-profile-gray; }
 }
 .profile-switch[data-state="false"] span { transform: rotate(0deg); }
@@ -107,10 +107,10 @@
 }
 .information {
     position: relative;
-    width: $width-profile-content; height: 360px;
+    width: $width-profile-content; height: 370px;
     margin: 0 auto;
     background-color: #fff;
-    box-shadow: 0 0 7px #9f9f9f;
+    box-shadow: 0 0 10px #9f9f9f;
     border-radius: 15px;
     margin-top: 5vmin;
     .inner {
@@ -143,6 +143,45 @@
             margin: 0;
             font-size: 14px;
             &::before { content: "\25C6"; position: relative; left: -10px; }
+        }
+    }
+}
+.project {
+    position: relative;
+    width: $width-profile-content;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 5vmin;
+    a {
+        position: relative;
+        width: 48%;
+        box-sizing: border-box;
+        padding: 6px;
+        color: #4c4c4c;
+        background-color: #fff;
+        margin-right: 2%;
+        margin-bottom: 2vmin;
+        box-shadow: 0 0 6px #9f9f9f;
+        text-align: left;
+        text-decoration: none;
+        transition: all .4s ease;
+        &:hover { color: #fff; background-color: $theme-profile-green; }
+        img {
+            display: block;
+            width: 100%;
+        }
+        h4 { height: 20px; }
+        p {
+            height: 60px;
+            padding: 0 2px;
+            font-size: 14px;
+        }
+        time {
+            display: block;
+            text-align: right;
+            padding: 10px 0;
+            font-size: 12px;
         }
     }
 }

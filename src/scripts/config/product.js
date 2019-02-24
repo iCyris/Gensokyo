@@ -1,0 +1,18 @@
+export default [
+    {
+        "id": 1,
+        "title": "KiwiFruit",
+        "intro": "My CSS Animation works. Love Kiwi!",
+        "thumb": "/images/profile/project/kiwi-fruit.png",
+        "link": "https://kiwi-fruit.cyris.moe",
+        "time": "2019.1.7"
+    },
+    {
+        "id": 2,
+        "title": "Hugo Theme Yuki",
+        "intro": "She is as pure as the snow.",
+        "thumb": "/images/profile/project/hugo-theme-yuki.png",
+        "link": "https://github.com/iCyris/hugo-theme-yuki",
+        "time": "2019.1.28"
+    }
+]
