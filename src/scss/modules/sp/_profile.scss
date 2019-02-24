@@ -1,7 +1,7 @@
 /*
  * Profile Page (sp)
  */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 760px) {
     .header {
         height: 15vmin;
         margin-top: 30vmin;
@@ -35,7 +35,19 @@
     }
     .information {
         width: $width-profile-content__sp;
+        height: 400px;
         box-shadow: 0 0 6px #9f9f9f;;
         margin-top: 10vmin;
+        .inner {
+            &::before {
+                width: 12vmin; height: 12vmin;
+                left: calc(50% - 6vmin); bottom: -6vmin;
+            }
+            &::after {
+                width: 6vmin; height: 6vmin;
+                left: calc(50% - 3vmin); bottom: -3vmin;
+                border-width: 3.45px;
+            }
+        }
     }
 }

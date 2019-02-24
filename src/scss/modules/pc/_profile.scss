@@ -122,7 +122,6 @@
         background-color: $theme-profile-gray;
         &::before, &::after {
             position: absolute; content: ""; border-radius: 50%;
-            @media screen and (max-width: 800px) { display: none; }
         }
         &::before {
             width: 7vmin; height: 7vmin;
