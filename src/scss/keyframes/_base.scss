@@ -33,6 +33,10 @@
     from { transform: rotate(0); }
     to { transform: rotate(1turn); }
 }
+@keyframes rotate0-90 {
+    from { transform: rotate(0); }
+    to { transform: rotate(90deg); }
+}
 @keyframes rotate90-0 {
     from { transform: rotate(90deg); }
     to { transform: rotate(0); }
@@ -40,4 +44,8 @@
 @keyframes rotate0-n90 {
     from { transform: rotate(0); }
     to { transform: rotate(-90deg); }
+}
+@keyframes rotaten90-0 {
+    from { transform: rotate(-90deg); }
+    to { transform: rotate(0); }
 }

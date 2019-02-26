@@ -107,7 +107,7 @@
 }
 .information {
     position: relative;
-    width: $width-profile-content; height: 370px;
+    width: $width-profile-content; height: 368px;
     margin: 0 auto;
     background-color: #fff;
     box-shadow: 0 0 10px #9f9f9f;
@@ -124,15 +124,15 @@
             position: absolute; content: ""; border-radius: 50%;
         }
         &::before {
-            width: 7vmin; height: 7vmin;
-            left: calc(50% - 3.5vmin); bottom: -3.5vmin;
+            width: 6vmin; height: 6vmin;
+            left: calc(50% - 3vmin); bottom: -3vmin;
             background-color: $theme-profile-blue-green;
             box-shadow: 0 0 5px $theme-profile-blue-green;
         }
         &::after {
-            width: 3.4vmin; height: 3.4vmin;
+            width: 3.2vmin; height: 3.2vmin;
             box-sizing: border-box;
-            left: calc(50% - 1.7vmin); bottom: -1.7vmin;
+            left: calc(50% - 1.6vmin); bottom: -1.6vmin;
             border: 3.4px solid #fff;
         }
         p {
@@ -185,6 +185,7 @@
         }
     }
 }
+
 /*
  * Animations
  */
