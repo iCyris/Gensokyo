@@ -2,18 +2,6 @@ import project_json from './config/product'
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-// preload
-const preloadPage = document.querySelector('#preload-page');
-const indexPage   = document.querySelector('#index-page');
-window.onload = () => {
-    preloadPage.addEventListener("animationend", (e) => {
-        if (e.animationName === 'fadeout') {
-            preloadPage.remove();
-            indexPage.style.display = 'block';
-        }
-    });
-};
-
 // normal
 const indexBtn = document.querySelector("#index-button");
 const profileSwitch = document.querySelector(".profile-switch");

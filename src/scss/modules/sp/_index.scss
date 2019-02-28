@@ -2,17 +2,29 @@
  * Index Page (sp)
 */
 @media screen and (max-width: 760px) {
+    .index-bg {
+        span:nth-child(1) { top:  30vmin; }
+        span:nth-child(2) { left: 30vmin; }
+        span:nth-child(3) { right: 15vmin; }
+    }
     .index-logo {
-        width: 70vmin;
-        left: calc(50% - 35vmin);
-        background-size: 70vmin;
+        width: 80vmin;
+        left: calc(50% - 40vmin);
+        background-size: 80vmin;
     }
     .index-sns {
-        bottom: 10vmin;
-        a {
-            width: 43px; height: 43px;
-            font-size: 25px;
-            line-height: 46px;
+        bottom: 12vmin;
+        width: 100%;
+        transform: rotate(0);
+        .inner {
+            width: 100%;
+            text-align: center;
+            left: 0; top: calc(50% - 6vmin);
+            a {
+                width: 45px; height: 45px;
+                font-size: 26px;
+                line-height: 47px;
+            }
         }
     }
     #index-button {
@@ -21,8 +33,5 @@
     #index-button[data-state='true'] .btn-main .short-id-2 span {
         &:nth-child(2) { transform: translateY(-3vmin); }
         &:nth-child(3) { transform: translateY( 3vmin); }
-    }
-    .index-footer {
-        display: none;
     }
 }

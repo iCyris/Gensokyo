@@ -4,39 +4,49 @@
 #index-page {
     position: absolute;
     width: 100%; height: 100%;
-    //display: none;
 }
 .index-bg {
     position: absolute;
     width: 100%; height: 100%;
-    left: 0; top: 0;
+    overflow: hidden;
     background-color: $theme-index-white;
     background-image: url("/images/index/diandian.svg");
     background-size: 30px;
     opacity: 0;
+    span {
+        position: absolute;
+        display: block;
+        box-sizing: border-box;
+        width: 200vmax;
+    }
+    span:nth-child(1) {
+        left: 0; top: 50vmin;
+        transform-origin: left;
+        transform: rotate(-30deg);
+        border-top: 3px dashed $theme-index-black;
+    }
+    span:nth-child(2) {
+        left: 50vmin; top: 0;
+        transform-origin: left;
+        transform: rotate(120deg);
+        border-top: 3px dashed $theme-index-black;
+    }
+    span:nth-child(3) {
+        right: 25vmin; bottom: 0;
+        transform-origin: right;
+        transform: rotate(105deg);
+        border-top: 3px dashed $theme-index-black;
+    }
 }
 .index-logo {
     position: absolute;
     width: 80vmin; height: 24vmin;
-    left: calc(50% - 40vmin); top: calc(50% - 14vmin);
+    left: calc(50% - 40vmin); top: calc(50% - 10vmin);
     background-image: url("/images/index/logo.svg");
     background-size: 80vmin;
     background-repeat: no-repeat;
     background-position: center;
     transform: scale(0);
-}
-.index-frame {
-    position: absolute;
-    width: 100%; height: 100%;
-    left: 0; top: 0;
-    overflow: hidden;
-    span { position: absolute; }
-    span:nth-child(odd) { width: 100%; height: 5vmin; }
-    span:nth-child(even) { width: 5vmin; height: 100%; }
-    span:nth-child(1) { left: 0; top: 0; border-bottom: 2px dashed; transform: translateX(-100%); }
-    span:nth-child(2) { right: 0; top: 0; border-left: 2px dashed; transform: translateY(100%); }
-    span:nth-child(3) { left: 0; bottom: 0; border-top: 2px dashed; transform: translateX(100%); }
-    span:nth-child(4) { left: 0; top: 0; border-right: 2px dashed; transform: translateY(-100%); }
 }
 #index-button {
     position: absolute;
@@ -104,66 +114,54 @@
 }
 .index-sns {
     position: absolute;
-    width: 100%; height: auto;
-    left: 0; bottom: 8.5vmin;
-    text-align: center;
+    width: 200vmax; height: 3px;
+    right: 0; bottom: 25vmin;
+    transform-origin: right;
+    transform: rotate(-15deg);
+    box-sizing: border-box;
+    border-top: 3px dashed $theme-index-black;
+    opacity: 0;
     z-index: 100;
+    .inner {
+        position: absolute;
+        width: auto; height: auto;
+        right: 8%; top: calc(50% - 3.5vmin);
+    }
     a {
         position: relative; display: inline-block;
-        width: 48px; height: 48px;
-        margin-right: 2.4vmin;
+        width: 50px; height: 50px;
+        margin-right: 2.5vmin;
         text-align: center;
         border-radius: 50%;
         text-decoration: none;
         color: white;
         background-color: $theme-index-black;
         font-size: 28px;
-        line-height: 50px;
+        line-height: 52px;
         box-shadow: rgba(0,0,0,.3) 0 0 15px;
         transform: scale(0);
         &:hover { background-color: $theme-index-blue; }
         transition: background-color .4s ease;
     }
 }
-.index-footer {
-    span {
-        position: absolute;
-        width: 0; height: 0;
-        left: 0; bottom: 0;
-        transform: translateX(-100%);
-        transform-origin: left;
-    }
-    span:nth-child(1) { border-bottom: 15vmin solid $theme-profile-green;       border-right: 60vmin solid transparent; }
-    span:nth-child(2) { border-bottom: 15vmin solid $theme-profile-green-light; border-right: 45vmin solid transparent; }
-    span:nth-child(3) { border-bottom: 15vmin solid $theme-index-black;         border-right: 30vmin solid transparent; }
-}
 
 /*
  * Animations
  */
-.index-bg { animation: fadein .8s ease forwards; }
-.index-frame {
-    span:nth-child(1) { animation: left-slide-in   .5s ease forwards; }
-    span:nth-child(2) { animation: bottom-slide-in .5s ease forwards; }
-    span:nth-child(3) { animation: right-slide-in  .5s ease forwards; }
-    span:nth-child(4) { animation: top-slide-in    .5s ease forwards; }
-}
-.index-logo { animation: scale-in .6s ease .5s forwards; }
+.index-bg { animation: fadein .6s ease forwards; }
+.index-logo { animation: scale-in .6s ease .2s forwards; }
 #index-button {
-    animation: scale-in .6s ease .8s forwards;
+    animation: scale-in .6s ease forwards;
     .btn-bg {
-        &::before { animation: rotate-1-turn 8s linear 1.2s infinite; }
-        &::after  { animation: rotate-1-turn 9s linear 1.7s infinite; }
+        &::before { animation: rotate-1-turn 8s linear 0.4s infinite; }
+        &::after  { animation: rotate-1-turn 9s linear 0.9s infinite; }
     }
 }
 .index-sns {
-    a:nth-child(1) { animation: scale-in .6s ease 1.1s forwards; }
-    a:nth-child(2) { animation: scale-in .6s ease 1.2s forwards; }
-    a:nth-child(3) { animation: scale-in .6s ease 1.3s forwards; }
-    a:nth-child(4) { animation: scale-in .6s ease 1.4s forwards; }
-    a:nth-child(5) { animation: scale-in .6s ease 1.5s forwards; }
-}
-.index-footer {
-    span { animation: left-slide-in .6s ease 1.1s forwards; }
-
+    animation: fadein .5s ease forwards;
+    a:nth-child(1) { animation: scale-in .6s ease 0.6s forwards; }
+    a:nth-child(2) { animation: scale-in .6s ease 0.7s forwards; }
+    a:nth-child(3) { animation: scale-in .6s ease 0.8s forwards; }
+    a:nth-child(4) { animation: scale-in .6s ease 0.9s forwards; }
+    a:nth-child(5) { animation: scale-in .6s ease 1.0s forwards; }
 }
