@@ -7,7 +7,6 @@
  * Keyframes
  */
 @import "keyframes/base";
-@import "keyframes/preload";
 @import "keyframes/index";
 @import "keyframes/profile";
 
@@ -17,10 +16,8 @@
 // PC
 @import "modules/pc/base";
 @import "modules/pc/index";
-@import "modules/pc/preload";
 @import "modules/pc/profile";
 // SP
 @import "modules/sp/base";
 @import "modules/sp/index";
-@import "modules/sp/preload";
 @import "modules/sp/profile";
