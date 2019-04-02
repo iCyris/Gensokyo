@@ -8,7 +8,7 @@ function Gensokyo() {
     return (
         <div id='gensokyo'>
             <HomePage />
-            <ProfileSwitch/>
+            <ProfileSwitch />
             <ProfilePage />
         </div>
     );
