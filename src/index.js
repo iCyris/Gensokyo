@@ -1,2 +1,2 @@
-import './index.scss';
 import './scripts/app.js'
+import './scss/style.scss';
