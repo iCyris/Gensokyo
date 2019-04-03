@@ -1,6 +1,19 @@
-import './components/Gensokyo'
-import './actions/Action'
+import React, { useReducer } from "react";
+import ReactDOM from 'react-dom'
+import Gensokyo from './components/Gensokyo'
+import { Context, initialState, reducer } from "./store/menu";
 
-// console
-console.log("> 『 绿生的幻想乡 』");
-console.log(">  Cyris's design portfolio v2.");
+function App() {
+    const [store, dispatch] = useReducer(reducer, initialState)
+
+    return (
+        <Context.Provider value = {{ store, dispatch }}>
+            <Gensokyo />
+        </Context.Provider>
+    )
+}
+
+ReactDOM.render (
+    <App />,
+    document.getElementById('root')
+)

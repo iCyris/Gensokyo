@@ -1,22 +1,21 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import HomePage from './Home'
-import ProfileSwitch from './ProfileSwitch'
-import ProfilePage from './Profile'
+import React, {useContext} from 'react'
+import Prologue from './Prologue'
+import LastChapter from './LastChapter'
+import { Context } from "../store/menu";
 
-function Gensokyo() {
-    return (
-        <div id='gensokyo'>
-            <HomePage />
-            <ProfileSwitch />
-            <ProfilePage />
-        </div>
-    );
+export default function Gensokyo() {
+    const { store } = useContext(Context)
+
+    switch (store.chapter.name) {
+        case 'Prologue':
+            return <Prologue />
+        case 'LastChapter':
+            return <LastChapter />
+        default:
+            return <LastChapter />
+    }
 }
 
-const element = <Gensokyo />;
-
-ReactDOM.render(
-    element,
-    document.getElementById('root')
-);
+// Console
+console.log("> 『 绿生的幻想乡 』")
+console.log(">  Cyris's design portfolio v2.")

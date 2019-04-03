@@ -1,13 +1,18 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import { Context } from "../store/menu";
 
-export default class Prologue extends React.Component {
-    render() {
-        return (
-            <div className="prologue">
-                <div className="prologue-bg">
-                    <div /><div />
-                </div>
-            </div>
-        );
+export default function Prologue() {
+    const { dispatch } = useContext(Context)
+    const chapter = {
+        name: 'LastChapter',
+        description: 'LastChapter'
     }
+
+    return (
+        <div id="prologue" onAnimationEnd={() => dispatch({ type: "changeChapter", payload: chapter })}>
+            <div className="prologue-bg">
+                <div /><div />
+            </div>
+        </div>
+    )
 }

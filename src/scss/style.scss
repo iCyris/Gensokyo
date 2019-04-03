@@ -15,9 +15,11 @@
  */
 // PC
 @import "modules/pc/base";
+@import "modules/pc/prologue";
 @import "modules/pc/index";
 @import "modules/pc/profile";
 // SP
 @import "modules/sp/base";
+@import "modules/sp/prologue";
 @import "modules/sp/index";
 @import "modules/sp/profile";

@@ -96,7 +96,7 @@
         }
     }
 }
-#index-button[data-state="true"] {
+#index-button[data-state="close"], #index-button[data-state="init"] {
     .btn-main { &:hover { background-color: $theme-index-green; } }
     .btn-main .short-id-2 span {
         &:nth-child(1) { opacity: 1; }
@@ -104,7 +104,7 @@
         &:nth-child(3) { transform: translateY(2vmin); }
     }
 }
-#index-button[data-state="false"] {
+#index-button[data-state="open"] {
     .btn-main { &:hover { background-color: $theme-index-red; } }
     .btn-main .short-id-2 span {
         &:nth-child(1) { opacity: 0; }
