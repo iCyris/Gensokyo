@@ -175,8 +175,7 @@
     div:nth-child(1) { right: -100vmax; }
     div:nth-child(2) { right: -90vmax; }
     div:nth-child(3) { right: -80vmax; }
-    div:nth-child(4) { right: -70vmax; }
-    div:nth-child(5) { right: -20vmax; height: 200vmax; }
+    div:nth-child(4) { right: -30vmax; height: 200vmax; }
 }
 
 /*
@@ -199,7 +198,6 @@
         div:nth-child(2) {
             animation: prologue-stage-curtain-open__right .8s cubic-bezier(.41,.49,.28,1.01) 2.3s forwards;
         }
-
     }
     .prologue-stage-title {
         div:nth-child(1) {
@@ -216,5 +214,4 @@
     div:nth-child(2) { animation: prologue-cover-in 2s ease 3.5s forwards; }
     div:nth-child(3) { animation: prologue-cover-in 2s ease 3.6s forwards; }
     div:nth-child(4) { animation: prologue-cover-in 2s ease 3.7s forwards; }
-    div:nth-child(5) { animation: prologue-cover-in 2s ease 3.8s forwards; }
 }
