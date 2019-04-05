@@ -29,6 +29,6 @@ export const reducer = (state, action) => {
         default:
             return state;
     }
-};
+}
 
 export const Context = React.createContext()

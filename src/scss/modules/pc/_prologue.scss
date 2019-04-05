@@ -2,7 +2,219 @@
  * Prologue page
  */
 #prologue {
-    background-color: #333333;
+    position: absolute;
     width: 100%; height: 100%;
-    animation: fadeout 2s ease forwards;
+    left: 0; top: 0;
+    overflow: hidden;
+}
+.prologue-bg {
+    position: absolute;
+    width: 100%; height: 100%;
+    left: 0; top: 0;
+    div {
+        position: absolute;
+        width: 30%; height: 0;
+        opacity: 0;
+        transform-origin: center;
+    }
+    div:nth-child(1) {
+        left: 0; top: 0;
+        border-left: 0 solid transparent;
+        border-right: 40vw solid transparent;
+        border-top: 100vh solid $theme-prologue-gray;
+    }
+    div:nth-child(2) {
+        right: 0; top: 0;
+        border-left: 40vw solid transparent;
+        border-right: 0 solid transparent;
+        border-bottom: 100vh solid $theme-prologue-black;
+    }
+}
+.prologue-frame {
+    position: absolute;
+    left: 5vmin; top: 5vmin;
+    width: calc(100% - 10vmin); height: calc(100% - 10vmin);
+    transform-origin: center;
+    opacity: 0;
+    span { position: absolute; }
+    // left
+    div:nth-child(1) {
+        span:nth-child(1) {
+            width: 70%; height: 0;
+            left: 0; top: 0;
+            border-bottom: $theme-prologue-black 2px dashed;
+        }
+        span:nth-child(2) {
+            width: 0; height: 100%;
+            left: 0; top: 0;
+            border-right: $theme-prologue-black 2px dashed;
+        }
+        span:nth-child(3) {
+            width: 30%; height: 0;
+            left: 0; bottom: 0;
+            border-top: $theme-prologue-black 2px dashed;
+        }
+    }
+    // right
+    div:nth-child(2) {
+        span:nth-child(1) {
+            width: 30%; height: 0;
+            right: 0; top: 0;
+            border-bottom: $theme-prologue-gray 2px dashed;
+        }
+        span:nth-child(2) {
+            width: 0; height: 100%;
+            right: 0; top: 0;
+            border-left: $theme-prologue-gray 2px dashed;
+        }
+        span:nth-child(3) {
+            width: 70%; height: 0;
+            right: 0; bottom: 0;
+            border-top: $theme-prologue-gray 2px dashed;
+        }
+    }
+}
+.prologue-stage {
+    position: absolute;
+    width: 60vw; height: 50vh;
+    left: calc(50% - 30vw); top: calc(50% - 25vh);
+    .prologue-stage-curtain {
+        position: absolute;
+        width: 100%; height: 100%;
+        left: 0; top: 0;
+        opacity: 0;
+        div {
+            position: absolute;
+            width: 100%; height: 100%;
+            &::before, &::after { content: ""; position: absolute; }
+        }
+        div:nth-child(1) {
+            left: 0; top: 0;
+            transform: translateX(calc(50% - 2px));
+            &:before {
+                width: 2px; height: 100%;
+                background-color: $theme-prologue-black;
+                left: 0; top: 0;
+            }
+            &::after {
+                border-radius: 8vmin 0 0 8vmin;
+                height: 8vmin; width: 4vmin;
+                left: -4vmin; top: 0;
+                background-color: $theme-prologue-black;
+            }
+        }
+        div:nth-child(2) {
+            right: 0; top: 0;
+            transform: translateX(calc(-50% + 2px));
+            &:before {
+                width: 2px; height: 100%;
+                background-color: $theme-prologue-gray;
+                right: 0; top: 0;
+            }
+            &::after {
+                border-radius: 0 8vmin 8vmin 0;
+                height: 8vmin; width: 4vmin;
+                right: -4vmin; bottom: 0;
+                background-color: $theme-prologue-gray;
+            }
+        }
+    }
+    .prologue-stage-title {
+        position: absolute;
+        width: 100%; height: 100%;
+        left: 0; top: 0;
+        display: flex;
+        div {
+            position: relative;
+            width: 50%; height: 100%;
+            background-size: 70%;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0;
+        }
+        div:nth-child(1) { background-image: url("/images/prologue/progolue-title-part1.svg");}
+        div:nth-child(2) { background-image: url("/images/prologue/progolue-title-part2.svg");}
+    }
+}
+.prologue-skip {
+    position: absolute;
+    width: 12.8vmin; height: 12.8vmin;
+    right: 8vmin; bottom: 8vmin;
+    background-color: $theme-prologue-red;
+    border-radius: 50%;
+    cursor: pointer;
+    &::before {
+        content: ""; position: absolute;
+        width: 100%; height: 100%;
+        left: 0; top: 0;
+        border-radius: 50%;
+        background-color: $theme-prologue-yellow;
+        transform: scale(0);
+        transition: all .3s ease;
+    }
+    &::after {
+        content: ""; position: absolute;
+        width: 100%; height: 100%;
+        left: 0; top: 0;
+        background-image: url("/images/prologue/progolue-skip.svg");
+        background-repeat: no-repeat;
+        background-size: 8vmin;
+        background-position: center;
+    }
+    &:hover::before { transform: scale(1); }
+}
+.prologue-cover {
+    div {
+        position: absolute;
+        width: 200vmax; height: 10vmax;
+        bottom: 0;
+        transform: rotate(-45deg) translate(-200vmax, -200vmax);
+        transform-origin: center;
+        background-color: $theme-prologue-black;
+    }
+    div:nth-child(1) { right: -100vmax; }
+    div:nth-child(2) { right: -90vmax; }
+    div:nth-child(3) { right: -80vmax; }
+    div:nth-child(4) { right: -70vmax; }
+    div:nth-child(5) { right: -20vmax; height: 200vmax; }
+}
+
+/*
+ * Animations
+ */
+.prologue-bg {
+    div:nth-child(1) { animation: prologue-bg-in__left  .8s cubic-bezier(.59,.04,.27,1.02) forwards; }
+    div:nth-child(2) { animation: prologue-bg-in__right .8s cubic-bezier(.59,.04,.27,1.02) forwards; }
+}
+.prologue-frame {
+    animation: prologue-frame-in .3s ease .8s forwards;
+}
+.prologue-stage {
+    .prologue-stage-curtain {
+        animation: fadein 1.5s ease 1.1s forwards,
+                prologue-stage-rotate 1.5s cubic-bezier(.11,.48,.27,1.01) 1.1s forwards;
+        div:nth-child(1)  {
+            animation: prologue-stage-curtain-open__left .8s cubic-bezier(.41,.49,.28,1.01) 2.3s forwards;
+        }
+        div:nth-child(2) {
+            animation: prologue-stage-curtain-open__right .8s cubic-bezier(.41,.49,.28,1.01) 2.3s forwards;
+        }
+
+    }
+    .prologue-stage-title {
+        div:nth-child(1) {
+            animation: prologue-stage-title-in__left .8s cubic-bezier(.41,.49,.28,1.01) 2.55s forwards;
+        }
+        div:nth-child(2) {
+            animation: prologue-stage-title-in__right .8s cubic-bezier(.41,.49,.28,1.01) 2.55s forwards;
+        }
+
+    }
+}
+.prologue-cover {
+    div:nth-child(1) { animation: prologue-cover-in 2s ease 3.4s forwards; }
+    div:nth-child(2) { animation: prologue-cover-in 2s ease 3.5s forwards; }
+    div:nth-child(3) { animation: prologue-cover-in 2s ease 3.6s forwards; }
+    div:nth-child(4) { animation: prologue-cover-in 2s ease 3.7s forwards; }
+    div:nth-child(5) { animation: prologue-cover-in 2s ease 3.8s forwards; }
 }

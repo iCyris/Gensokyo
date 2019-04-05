@@ -1,0 +1,14 @@
+/*
+ * Prologue page (sp)
+ */
+@media screen and (max-width: 760px) {
+    .prologue-stage {
+        width: 65vw; height: 20vh;
+        left: calc(50% - 32.5vmin); top: calc(50% - 10vh);
+    }
+    .prologue-skip {
+        right: 10vmin; bottom: 10vmin;
+        width: 16vmin; height: 16vmin;
+        &::after { background-size: 10vmin; }
+    }
+}

@@ -1,0 +1,88 @@
+/*
+ * Keyframes - prologue
+ */
+@keyframes prologue-frame-in {
+    from {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes prologue-bg-in__left {
+    from {
+        transform: translateY(-60%);
+        opacity: .6;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes prologue-bg-in__right {
+    from {
+        transform: translateY(60%);
+        opacity: .6;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes prologue-stage-rotate {
+    0% {
+        transform: rotate(-90deg);
+    }
+    75% {
+        transform: rotate(370deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes prologue-stage-curtain-open__left {
+    0% {
+        transform: translateX(calc(50% - 2px));
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes prologue-stage-curtain-open__right {
+    0% {
+        transform: translateX(calc(-50% + 2px));
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes prologue-stage-title-in__left {
+    0% {
+        opacity: 0;
+        transform: translateY(-15%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(-10%);
+    }
+}
+@keyframes prologue-stage-title-in__right {
+    0% {
+        opacity: 0;
+        transform: translateY(15%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(10%);
+    }
+}
+@keyframes prologue-cover-in {
+    0% {
+        transform: translate(-100vmax, -100vmax) rotate(-45deg) ;
+    }
+    100% {
+        transform: translate(0, 0) rotate(-45deg) ;
+    }
+}

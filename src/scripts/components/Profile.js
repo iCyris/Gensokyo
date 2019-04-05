@@ -27,8 +27,6 @@ export default function ProfilePage() {
                 <div className="author">Cyris</div>
                 <div className="description">
                     {'\u00A0'}{'\u00A0'}新出的芽用它的温柔融化了少年心中的墙堵箭影，「绿生」由此而生。我希望通过 Web 的方式来表现自己的内心世界，因不甘平庸而奋起，因不达目标而不懈。
-                    <br/><br/>
-                    这里的生活是玫瑰色的！
                 </div>
             </section>
 
@@ -41,7 +39,7 @@ export default function ProfilePage() {
                         <p>兴趣：Web、RPG、ACG</p>
                         <p>喜欢的技术：JavaScript、CSS、HTML5 Canvas、illustrator</p>
                         <p>喜欢的食物：年糕、虾仁、汤食、辣食、菓本堂的果汁</p>
-                        <p>目前：在读学生</p>
+                        <p>目前：寻找实习中...</p>
                         <p>邮箱：cyris#pen.moe (# -> @)</p>
                     </div>
                 </div>
