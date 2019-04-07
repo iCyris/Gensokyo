@@ -37,8 +37,11 @@ export default function Prologue() {
             </div>
             <div className="prologue-skip" onClick={() => dispatch({ type: "changeChapter", payload: lastChapter })} />
             <div className="prologue-cover">
-                <div /><div /><div />
-                <div onAnimationEnd={() => dispatch({ type: "changeChapter", payload: nextChapter })} />
+                <div /><div /><div /><div  />
+            </div>
+            <div className="prologue-logo" />
+            <div className="prologue-out">
+                <div /><div /><div /><div onAnimationEnd={() => dispatch({ type: "changeChapter", payload: nextChapter })} />
             </div>
         </div>
     )
