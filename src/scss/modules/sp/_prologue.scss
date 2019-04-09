@@ -3,8 +3,8 @@
  */
 @media screen and (max-width: 760px) {
     .prologue-stage {
-        width: 70vw; height: 30vh;
-        left: calc(50% - 35vmin); top: calc(50% - 15vh);
+        width: 74vw; height: 30vh;
+        left: calc(50% - 37vmin); top: calc(50% - 15vh);
     }
     .prologue-skip {
         right: 10vmin; bottom: 10vmin;
@@ -12,7 +12,7 @@
         &::after { background-size: 10vmin; }
     }
     .prologue-logo {
-        width: 16vmin; height: 16vmin;
-        left: calc(50% - 8vmin); top: calc(50% - 8vmin);
+        width: 20vmin; height: 20vmin;
+        left: calc(50% - 10vmin); top: calc(50% - 10vmin);
     }
 }

@@ -5,13 +5,15 @@ export default function Prologue() {
     const { dispatch } = useContext(Context)
 
     const nextChapter = {
-        name: 'LastChapter',
-        description: 'LastChapter'
+        id: "LastChapter",
+        name: "Chapter_1",
+        description: "Another Sunny Day"
     }
 
     const lastChapter = {
-        name: 'LastChapter',
-        description: 'LastChapter'
+        id: "LastChapter",
+        name: "LastChapter",
+        description: "Cyris's Gensokyo"
     }
 
     return (
@@ -38,6 +40,7 @@ export default function Prologue() {
             <div className="prologue-cover">
                 <div /><div /><div /><div  />
             </div>
+            <div className="prologue-wave" />
             <div className="prologue-logo" />
             <div className="prologue-out">
                 <div /><div /><div /><div onAnimationEnd={() => dispatch({ type: "changeChapter", payload: nextChapter })} />

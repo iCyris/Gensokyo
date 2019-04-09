@@ -3,10 +3,10 @@
     <style>
       .cls-1 {
         fill: none;
-        stroke: #f2f0ed;
+        stroke: #F0EEEA;
         stroke-linecap: round;
         stroke-miterlimit: 3;
-        stroke-width: 12px;
+        stroke-width: 10px;
         fill-rule: evenodd;
       }
     </style>

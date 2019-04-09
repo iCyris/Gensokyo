@@ -21,13 +21,13 @@
         left: 0; top: 0;
         border-left: 0 solid transparent;
         border-right: 40vw solid transparent;
-        border-top: 100vh solid $theme-prologue-gray;
+        border-top: 100vh solid $theme-color-milk;
     }
     div:nth-child(2) {
         right: 0; top: 0;
         border-left: 40vw solid transparent;
         border-right: 0 solid transparent;
-        border-bottom: 100vh solid $theme-prologue-black;
+        border-bottom: 100vh solid $theme-color-orchid;
     }
 }
 .prologue-frame {
@@ -42,17 +42,17 @@
         span:nth-child(1) {
             width: 70%; height: 0;
             left: 0; top: 0;
-            border-bottom: $theme-prologue-black 2px dashed;
+            border-bottom: $theme-color-orchid 2px dashed;
         }
         span:nth-child(2) {
             width: 0; height: 100%;
             left: 0; top: 0;
-            border-right: $theme-prologue-black 2px dashed;
+            border-right: $theme-color-orchid 2px dashed;
         }
         span:nth-child(3) {
             width: 30%; height: 0;
             left: 0; bottom: 0;
-            border-top: $theme-prologue-black 2px dashed;
+            border-top: $theme-color-orchid 2px dashed;
         }
     }
     // right
@@ -60,24 +60,24 @@
         span:nth-child(1) {
             width: 30%; height: 0;
             right: 0; top: 0;
-            border-bottom: $theme-prologue-gray 2px dashed;
+            border-bottom: $theme-color-milk 2px dashed;
         }
         span:nth-child(2) {
             width: 0; height: 100%;
             right: 0; top: 0;
-            border-left: $theme-prologue-gray 2px dashed;
+            border-left: $theme-color-milk 2px dashed;
         }
         span:nth-child(3) {
             width: 70%; height: 0;
             right: 0; bottom: 0;
-            border-top: $theme-prologue-gray 2px dashed;
+            border-top: $theme-color-milk 2px dashed;
         }
     }
 }
 .prologue-stage {
     position: absolute;
-    width: 60vw; height: 50vh;
-    left: calc(50% - 30vw); top: calc(50% - 25vh);
+    width: 70vw; height: 50vh;
+    left: calc(50% - 35vw); top: calc(50% - 25vh);
     .prologue-stage-curtain {
         position: absolute;
         width: 100%; height: 100%;
@@ -91,31 +91,31 @@
         div:nth-child(1) {
             left: 0; top: 0;
             transform: translateX(calc(50% - 2px));
-            &:before {
+            &::before {
                 width: 2px; height: 100%;
-                background-color: $theme-prologue-black;
+                background-color: $theme-color-orchid;
                 left: 0; top: 0;
             }
             &::after {
-                border-radius: 8vmin 0 0 8vmin;
+                border-radius: 8vmin 0 8vmin 0;
                 height: 8vmin; width: 4vmin;
                 left: -4vmin; top: 0;
-                background-color: $theme-prologue-black;
+                background-color: $theme-color-orchid;
             }
         }
         div:nth-child(2) {
             right: 0; top: 0;
             transform: translateX(calc(-50% + 2px));
-            &:before {
+            &::before {
                 width: 2px; height: 100%;
-                background-color: $theme-prologue-gray;
+                background-color: $theme-color-milk;
                 right: 0; top: 0;
             }
             &::after {
-                border-radius: 0 8vmin 8vmin 0;
+                border-radius: 8vmin 0 8vmin 0;
                 height: 8vmin; width: 4vmin;
                 right: -4vmin; bottom: 0;
-                background-color: $theme-prologue-gray;
+                background-color: $theme-color-milk;
             }
         }
     }
@@ -140,7 +140,7 @@
     position: absolute;
     width: 12.8vmin; height: 12.8vmin;
     right: 8vmin; bottom: 8vmin;
-    background-color: $theme-prologue-red;
+    background-color: $theme-prologue-brown;
     border-radius: 50%;
     cursor: pointer;
     &::before {
@@ -148,7 +148,7 @@
         width: 100%; height: 100%;
         left: 0; top: 0;
         border-radius: 50%;
-        background-color: $theme-prologue-yellow;
+        background-color: $theme-prologue-green;
         transform: scale(0);
         transition: all .3s ease;
     }
@@ -170,22 +170,37 @@
         bottom: 0;
         transform: rotate(-45deg) translate(-200vmax, -200vmax);
         transform-origin: center;
-        background-color: $theme-prologue-black;
+        background-color: $theme-color-orchid;
     }
     div:nth-child(1) { right: -100vmax; }
     div:nth-child(2) { right: -90vmax; }
     div:nth-child(3) { right: -80vmax; }
     div:nth-child(4) { right: -30vmax; height: 200vmax; }
 }
+.prologue-wave {
+    position: absolute;
+    width: 80vmin; height: 80vmin;
+    left: calc(50% - 40vmin); top: calc(50% - 40vmin);
+    &::before, &::after {
+        content: ""; position: absolute;
+        width: 100%; height: 100%;
+        left: 0; top: 0;
+        border-radius: 50%;
+        transform: scale(0);
+        transform-origin: center;
+    }
+    &::before { background-color: $theme-color-milk; }
+    &::after  { background-color: $theme-color-orchid; }
+}
 .prologue-logo {
     position: absolute;
-    width: 12vmin; height: 12vmin;
-    left: calc(50% - 6vmin); top: calc(50% - 6vmin);
+    width: 14vmin; height: 14vmin;
+    left: calc(50% - 7vmin); top: calc(50% - 7.5vmin);
     background-image: url("/images/prologue/logo.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
-    opacity: 0;
+    transform: scale(0);
 }
 .prologue-out {
     position: absolute;
@@ -196,7 +211,7 @@
     div {
         position: relative;
         width: 100%; height: 25%;
-        background-color: $theme-chapter-bg;
+        background-color: $theme-color-milk;
         transform-origin: center;
         transform: translateX(100%);
     }
@@ -234,17 +249,21 @@
     }
 }
 .prologue-cover {
-    div:nth-child(1) { animation: prologue-cover-in 2s ease 3.4s forwards; }
-    div:nth-child(2) { animation: prologue-cover-in 2s ease 3.5s forwards; }
-    div:nth-child(3) { animation: prologue-cover-in 2s ease 3.6s forwards; }
-    div:nth-child(4) { animation: prologue-cover-in 2s ease 3.7s forwards; }
+    div:nth-child(1) { animation: prologue-cover-in 2s ease 3.2s forwards; }
+    div:nth-child(2) { animation: prologue-cover-in 2s ease 3.3s forwards; }
+    div:nth-child(3) { animation: prologue-cover-in 2s ease 3.4s forwards; }
+    div:nth-child(4) { animation: prologue-cover-in 2s ease 3.5s forwards; }
+}
+.prologue-wave {
+    &::before { animation: scale0-1 .4s ease 5.1s forwards; }
+    &::after  { animation: scale0-1 .4s ease 5.2s forwards; }
 }
 .prologue-logo {
-    animation: fadein .04s linear 5.7s alternate 7 forwards;
+    animation: prologue-logo-in .5s ease 5.6s forwards;
 }
 .prologue-out {
-    div:nth-child(1) { animation: right-slide-in 1s ease 6.5s forwards; }
-    div:nth-child(2) { animation: right-slide-in 1s ease 6.6s forwards; }
-    div:nth-child(3) { animation: right-slide-in 1s ease 6.7s forwards; }
-    div:nth-child(4) { animation: right-slide-in 1s ease 6.8s forwards; }
+    div:nth-child(1) { animation: right-slide-in 1s ease 6.4s forwards; }
+    div:nth-child(2) { animation: right-slide-in 1s ease 6.5s forwards; }
+    div:nth-child(3) { animation: right-slide-in 1s ease 6.6s forwards; }
+    div:nth-child(4) { animation: right-slide-in 1s ease 6.7s forwards; }
 }

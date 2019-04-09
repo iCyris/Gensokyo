@@ -1,0 +1,27 @@
+/*
+ * Open chapter
+ */
+.open-chapter {
+    position: absolute;
+    width: 100%; height: 100%;
+    left: 0; top: 0;
+    background-color: $theme-color-milk;
+}
+.chapter-bg {
+    position: absolute;
+    width: 100%; height: 100%;
+    left: 0; top: 0;
+    background-image: url("/images/chapters/squ.svg");
+    background-size: 20px;
+    opacity: 0;
+}
+.chapter-name {
+    position: absolute;
+    width: 50vmin;
+    left: calc(50% - 25vmin); top: 25vmin
+}
+
+/*
+ * Animations
+ */
+.chapter-bg { animation: fadein .4s ease forwards ;}
