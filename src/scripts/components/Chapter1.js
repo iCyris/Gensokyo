@@ -1,15 +1,12 @@
 import React, {useContext} from 'react'
 import OpenChapter from './OpenChapter'
-import { Context } from "../store/menu";
+import { Context } from "../store/menu"
+import open from "../actions/opening"
 
 export default function Chapter1() {
     const { store, dispatch } = useContext(Context)
 
-    const nextChapter = {
-        id: "LastChapter",
-        name: "LastChapter",
-        description: "LastChapter"
-    }
+    const nextChapter = open("LastChapter")
 
     return (
         <div id='chapter1'>

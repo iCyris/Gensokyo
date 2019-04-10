@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Context } from "../store/menu";
+import { Context } from "../store/menu"
 
 export default function ProfileSwitch() {
     const { store } = useContext(Context)

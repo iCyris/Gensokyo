@@ -1,12 +1,5 @@
-export default [
-    {
-        "id": "Chapter1",
-        "name": "Chapter 1",
-        "description": "Another sunny day"
-    },
-    {
-        "id": "LastChapter",
-        "name": "Last Chapter",
-        "description": "Cyris's gensokyo"
-    },
-]
+export default {
+    "Prologue": "『 绿生的幻想乡 』",
+    "Chapter_1": "the description of chapter1",
+    "LastChapter": "Main Land"
+}

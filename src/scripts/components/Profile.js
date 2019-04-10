@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
-import project_json from "../config/product";
-import { Context } from "../store/menu";
+import project_json from "../config/product"
+import { Context } from "../store/menu"
 
 export default function ProfilePage() {
     const { store } = useContext(Context)
@@ -66,7 +66,7 @@ export default function ProfilePage() {
             {/* footer-box */}
             <section className="footer-box">
                 <div className="footer">
-                    <span>©{(new Date()).getFullYear()} Cyris. All rights reserved.</span>;
+                    <span>©{(new Date()).getFullYear()} Cyris. All rights reserved.</span>
                 </div>
             </section>
         </div>

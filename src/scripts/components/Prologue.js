@@ -1,19 +1,14 @@
 import React, {useContext} from 'react'
-import { Context } from "../store/menu";
+import { Context } from "../store/menu"
+import open from "../actions/opening"
 
 export default function Prologue() {
     const { dispatch } = useContext(Context)
 
-    const nextChapter = {
-        id: "LastChapter",
-        name: "Chapter_1",
-        description: "Another Sunny Day"
-    }
-
+    const nextChapter = open("LastChapter")
     const lastChapter = {
-        id: "LastChapter",
         name: "LastChapter",
-        description: "Cyris's Gensokyo"
+        description: "Main Land"
     }
 
     return (

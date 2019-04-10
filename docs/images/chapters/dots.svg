@@ -3,12 +3,10 @@
 <svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#dbd5d5;}
+	.st0{fill:#c6c6c9;}
 </style>
 <title>dots</title>
 <desc>Created with Sketch.</desc>
-<g>
-	<circle id="Oval-377-Copy-9" class="st0" cx="2.6" cy="2.6" r="2.6"/>
-	<circle id="Oval-377-Copy-14" class="st0" cx="12.6" cy="12.6" r="2.7"/>
-</g>
+<circle id="Oval-377-Copy-9" class="st0" cx="2" cy="2" r="2"/>
+<circle id="Oval-377-Copy-14" class="st0" cx="12" cy="12" r="2"/>
 </svg>
