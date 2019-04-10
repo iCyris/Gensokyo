@@ -18,7 +18,7 @@ export default [
     {
         "id": 3,
         "title": "Ume",
-        "intro": "A theme for saber.js.",
+        "intro": "An elegant theme for saber.js.",
         "thumb": "/images/profile/project/Ume.png",
         "link": "https://github.com/iCyris/Ume",
         "time": "2019.3.25"
