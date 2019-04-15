@@ -8,7 +8,7 @@
  */
 @import "keyframes/base";
 @import "keyframes/progolue";
-@import "keyframes/switch";
+@import "keyframes/openchapter";
 @import "keyframes/chapter1";
 @import "keyframes/index";
 @import "keyframes/profile";
@@ -19,14 +19,14 @@
 // PC
 @import "modules/pc/base";
 @import "modules/pc/prologue";
-@import "modules/pc/switch";
+@import "modules/pc/openchapter";
 @import "modules/pc/chapter1";
 @import "modules/pc/index";
 @import "modules/pc/profile";
 // SP
 @import "modules/sp/base";
 @import "modules/sp/prologue";
-@import "modules/sp/switch";
+@import "modules/sp/openchapter";
 @import "modules/sp/chapter1";
 @import "modules/sp/index";
 @import "modules/sp/profile";

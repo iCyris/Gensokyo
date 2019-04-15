@@ -127,8 +127,8 @@
         &::before {
             width: 6vmin; height: 6vmin;
             left: calc(50% - 3vmin); bottom: -3vmin;
-            background-color: $theme-profile-blue-green;
-            box-shadow: 0 0 5px $theme-profile-blue-green;
+            background-color: $theme-color-blue-green;
+            box-shadow: 0 0 5px $theme-color-blue-green;
         }
         &::after {
             width: 3.2vmin; height: 3.2vmin;

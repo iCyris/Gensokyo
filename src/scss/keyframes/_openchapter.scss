@@ -1,0 +1,31 @@
+/*
+ * Keyframes - open chapter
+ */
+@keyframes chapter-description-in {
+    0% {
+        color: rgba(65, 66, 75, 0);
+        border-color: rgba(65, 66, 75, 0);
+    }
+    100% {
+        color: rgba(65, 66, 75, 1);
+        border-color: rgba(65, 66, 75, 1);
+    }
+}
+@keyframes chapter-description-after-in {
+    0% {
+        transform: rotate(-4deg) translateY(-150%);
+    }
+    100% {
+        transform: rotate(-4deg) translateY(150%);
+    }
+}
+@keyframes chapter-name-in {
+    0% {
+        transform: translateY(-0.5em);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -33,6 +33,14 @@
     from { transform: scale(1); }
     to { transform: scale(0); }
 }
+@keyframes scaleX0-1 {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+}
+@keyframes scaleY0-1 {
+    from { transform: scaleY(0); }
+    to { transform: scaleY(1); }
+}
 @keyframes rotate-1-turn {
     from { transform: rotate(0); }
     to { transform: rotate(1turn); }

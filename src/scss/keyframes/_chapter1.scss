@@ -1,3 +1,60 @@
 /*
  * Keyframes - chapter 1
  */
+$points-move-length1: calc(40vmin - .15em);
+$points-move-length2: calc(-40vmin + .15em);
+
+@keyframes chapter1-effects-points__sub1 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX($points-move-length1);
+    }
+}
+@keyframes chapter1-effects-points__sub2 {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY($points-move-length1);
+    }
+}
+@keyframes chapter1-effects-points__sub3 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX($points-move-length2);
+    }
+}
+@keyframes chapter1-effects-points__sub4 {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY($points-move-length2);
+    }
+}
+@keyframes chapter1-effects-inside-scale {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+@keyframes chapter1-effects-out {
+    0% {
+        transform: scale(1) rotate(0);
+    }
+    50% {
+        transform: scale(.6) rotate(10deg);
+    }
+    100% {
+        transform: scale(10) rotate(-90deg);
+    }
+}

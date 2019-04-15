@@ -1,9 +1,146 @@
 /*
  * Chapter-1
  */
+$chapter1-theme-color-pink: #ca7a92;
+$chapter1-theme-color-green: #a8cbc6;
+$chapter1-theme-color-purple: #4a3f55;
+$chapter1-theme-color-purple__light: #817487;
+$chapter1-theme-color-blue: #79a7b5;
+
 #chapter1 {
     position: absolute;
     width: 100%; height: 100%;
     left: 0; top: 0;
     overflow: hidden;
+}
+.chapter1-open div {
+    position: absolute;
+    width: 100%; height: 100%;
+    left: 0; top: 0;
+    transform-origin: center;
+    transform: scaleY(0);
+    &:nth-child(1) { background-color: $chapter1-theme-color-pink; }
+    &:nth-child(2) { background-color: $chapter1-theme-color-purple; }
+    &:nth-child(3) { background-color: $chapter1-theme-color-green; }
+}
+.chapter1-effects {
+    position: absolute;
+    font-size: 10px;
+    transform: rotate(-45deg);
+    width: 40vmin; height: 40vmin;
+    left: calc(50% - 20vmin); top: calc(50% - 20vmin);
+    .chapter1-effects-outside {
+        width: inherit; height: inherit;
+        .lines {
+            position: absolute;
+            width: inherit; height: inherit;
+            div {
+                position: absolute;
+                overflow: hidden;
+                &::after {
+                    content: ""; position: absolute;
+                    width: 100%; height: 100%;
+                    background-color: $theme-color-milk;
+                }
+            }
+            div:nth-child(odd) { width: 100%; height: .3em; }
+            div:nth-child(even) { width: .3em; height: 100%; }
+            div:nth-child(1) {
+                left: 0; top: 0;
+                &::after { transform: translateX(-100%); }
+            }
+            div:nth-child(2) {
+                right: 0; top: 0;
+                &::after {
+                    transform: translateY(-100%);
+                }
+            }
+            div:nth-child(3) {
+                right: 0; bottom: 0;
+                &::after {
+                    transform: translateX(100%);
+                }
+            }
+            div:nth-child(4) {
+                left: 0; bottom: 0;
+                &::after {
+                    transform: translateY(100%);
+                }
+            }
+        }
+        .points {
+            position: absolute;
+            width: inherit; height: inherit;
+            div {
+                position: absolute;
+                width: 1.2em; height: 1.2em;
+                border-radius: 50%;
+                transform: scale(0);
+                &::after {
+                    content: ""; position: absolute;
+                    border-radius: inherit;
+                    width: 100%; height: 100%;
+                    left: 0; top: 0;
+                    background-color: $theme-color-milk;
+                }
+            }
+            div:nth-child(1) { left: -.6em; top: -.45em; }
+            div:nth-child(2) { right: -.45em; top: -.6em; }
+            div:nth-child(3) { right: -.6em; bottom: -.45em; }
+            div:nth-child(4) { left: -.45em; bottom: -.6em; }
+        }
+    }
+    .chapter1-effects-inside {
+        position: absolute;
+        width: inherit; height: inherit;
+        left: 0; top: 0;
+        div {
+            position: absolute;
+            width: inherit; height: inherit;
+            left: 0; top: 0;
+        }
+        div:nth-child(1) {
+            background-color: $theme-color-milk;
+            transform: scale(0);
+        }
+        div:nth-child(2) {
+            box-sizing: border-box;
+            border: $theme-color-milk solid .3em;
+            transform: scale(0);
+        }
+    }
+}
+
+/*
+ * Animation
+ */
+.chapter1-open div {
+    &:nth-child(1) { animation: scaleY0-1 .8s ease 1.3s forwards; }
+    &:nth-child(2) { animation: scaleY0-1 .8s ease 1.5s forwards; }
+    &:nth-child(3) { animation: scaleY0-1 .8s ease 1.7s forwards; }
+}
+.chapter1-effects {
+    animation: chapter1-effects-out 1s ease 5.1s forwards;
+    .chapter1-effects-outside {
+        .lines {
+            div:nth-child(1)::after { animation: left-slide-in   .8s ease 3.0s forwards; }
+            div:nth-child(2)::after { animation: top-slide-in    .8s ease 3.0s forwards; }
+            div:nth-child(3)::after { animation: right-slide-in  .8s ease 3.0s forwards; }
+            div:nth-child(4)::after { animation: bottom-slide-in .8s ease 3.0s forwards; }
+        }
+        .points {
+            div { animation: scale0-1 .4s ease 2.5s forwards, fadeout .4s ease 3.9s forwards; }
+            div:nth-child(1)::after { animation: chapter1-effects-points__sub1 .8s ease 3.0s forwards; }
+            div:nth-child(2)::after { animation: chapter1-effects-points__sub2 .8s ease 3.0s forwards; }
+            div:nth-child(3)::after { animation: chapter1-effects-points__sub3 .8s ease 3.0s forwards; }
+            div:nth-child(4)::after { animation: chapter1-effects-points__sub4 .8s ease 3.0s forwards; }
+        }
+    }
+    .chapter1-effects-inside {
+        div:nth-child(1) { animation: scale0-1 .8s ease 4.3s forwards; }
+        div:nth-child(2) { animation: chapter1-effects-inside-scale .8s ease 4.3s forwards; }
+    }
+}
+.chapter1-close {
+    animation: fadein .1s ease 6.1s forwards;
 }

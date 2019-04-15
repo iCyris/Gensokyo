@@ -5,7 +5,7 @@ import open from "../actions/opening"
 export default function Prologue() {
     const { dispatch } = useContext(Context)
 
-    const nextChapter = open("LastChapter")
+    const nextChapter = open("Chapter_1")
     const lastChapter = {
         name: "LastChapter",
         description: "Main Land"
