@@ -40,21 +40,47 @@ $points-move-length2: calc(-40vmin + .15em);
     0% {
         transform: scale(0);
     }
-    50% {
-        transform: scale(1);
-    }
     100% {
-        transform: scale(1.5);
+        transform: scale(1.6);
     }
 }
 @keyframes chapter1-effects-out {
     0% {
-        transform: scale(1) rotate(0);
+        transform: scale(1) rotate(45deg);
     }
-    50% {
-        transform: scale(.6) rotate(10deg);
+    45% {
+        transform: scale(.85) rotate(90deg);
     }
     100% {
-        transform: scale(10) rotate(-90deg);
+        transform: scale(6) rotate(0deg);
+    }
+}
+@keyframes chapter1-radio-in {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes chapter1-kurukuru-ch {
+    0% {
+        height: 0;
+    }
+    50% {
+        height: calc(100% - 8vmin);
+    }
+    100% {
+        height: 0;
+    }
+}
+@keyframes chapter1-kurukuru-out {
+    0% {
+        transform: scale(1) translateY(0);
+    }
+    100% {
+        transform: scale(0) translateY(10%);
     }
 }
