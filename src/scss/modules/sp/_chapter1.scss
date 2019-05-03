@@ -1,3 +1,12 @@
 /*
  * Chapter-1 (sp)
  */
+@media screen and (max-width: 760px) {
+    .chapter1-radio {
+        .chapter1-radio-start {
+            &::after {
+                left: 39%; top: 35%;
+            }
+        }
+    }
+}

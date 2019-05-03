@@ -13,10 +13,7 @@ export const reducer = (state, action) => {
         case "switch":
             return {
                 dataState: ((state.dataState === "close" || state.dataState === "init") ? "open" : "close"),
-                chapter: {
-                    name: state.chapter.name,
-                    description: state.chapter.description
-                }
+                chapter: {...state.chapter}
             }
         case "changeChapter":
             return {

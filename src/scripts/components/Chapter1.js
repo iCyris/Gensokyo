@@ -1,4 +1,4 @@
-import React, {useContext} from 'react'
+import React, { useContext } from 'react'
 import OpenChapter from './OpenChapter'
 import { Context } from "../store/menu"
 import open from "../actions/opening"
