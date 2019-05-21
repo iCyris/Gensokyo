@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import Prologue from './Prologue'
 import Chapter1 from './Chapter1'
+import Chapter2 from './Chapter2'
 import LastChapter from './LastChapter'
 import { Context } from "../store/menu"
 
@@ -18,6 +19,8 @@ export default function Gensokyo() {
             return <Prologue />
         case 'Chapter_1':
             return <Chapter1 />
+        case 'Chapter_2':
+            return <Chapter2 />
         case 'LastChapter':
             return <LastChapter />
         default:

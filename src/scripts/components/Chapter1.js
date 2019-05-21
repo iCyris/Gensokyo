@@ -6,7 +6,7 @@ import open from "../actions/opening"
 export default function Chapter1() {
     const { store, dispatch } = useContext(Context)
 
-    const nextChapter = open("LastChapter")
+    const nextChapter = open("Chapter_2")
 
     return (
         <div id='chapter1'>

@@ -23,7 +23,7 @@
     position: absolute;
     width: 100%; height: 100%;
     left: 0; top: 0;
-    background-image: url("/images/profile/background.svg");
+    background-image: url("../images/profile/background.svg");
     background-size: 40px;
     color: $theme-index-black;
     overflow-y: auto;
@@ -39,7 +39,7 @@
     position: relative;
     width: 100%; height: 12.5vmin;
     margin: 0 auto;
-    background-image: url("/images/profile/title.svg");
+    background-image: url("../images/profile/title.svg");
     background-size: 52vmin;
     background-position: center;
     background-repeat: no-repeat;
@@ -51,7 +51,7 @@
     width: 120px; height: 120px;
     border: 4px solid $theme-index-black;
     border-radius: 50%;
-    background-image: url("/images/profile/avatar.jpg");
+    background-image: url("../images/profile/avatar.jpg");
     background-size: 120px;
     margin-top: 8vmin;
 }

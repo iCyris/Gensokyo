@@ -1,0 +1,100 @@
+/*
+ * Keyframes - chapter 2
+ */
+@keyframes chapter2-open__type1 {
+    0% {
+        transform-origin: right top;
+        transform: rotate(90deg);
+    }
+    100% {
+        transform-origin: right top;
+        transform: rotate(0);
+    }
+}
+@keyframes chapter2-open__type2 {
+    0% {
+        transform-origin: left bottom;
+        transform: rotate(90deg);
+    }
+    100% {
+        transform-origin: left bottom;
+        transform: rotate(0);
+    }
+}
+@keyframes chapter2-open__type3 {
+    0% {
+        transform-origin: left top;
+        transform: rotate(-90deg);
+    }
+    100% {
+        transform-origin: left top;
+        transform: rotate(0);
+    }
+}
+@keyframes chapter2-open__type4 {
+    0% {
+        transform-origin: right bottom;
+        transform: rotate(-90deg);
+    }
+    100% {
+        transform-origin: right bottom;
+        transform: rotate(0);
+    }
+}
+@keyframes chapter2-claw-in {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.8);
+    }
+}
+@keyframes chapter2-night-fall {
+    0% {
+        transform: translateY(calc(-100% - 25vmin));
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes chapter2-stage-in {
+    0% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+@keyframes chapter2-stage-center-in {
+    0% {
+        transform: rotate(-90deg) scale(0);
+    }
+    100% {
+        transform: rotate(0) scale(1);
+    }
+}
+@keyframes chapter2-stage-squ-in__type1 {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(.9);
+    }
+}
+@keyframes chapter2-stage-squ-in__type2 {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(.7);
+    }
+}
+@keyframes chapter2-actress-in {
+    0% { transform: scale(0); opacity: .6; }
+    40% { transform: scale(1.1); opacity: 1; }
+    60% { transform: scale(1); opacity: 1; }
+    80% { transform: scale(1.03); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+}

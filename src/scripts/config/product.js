@@ -3,7 +3,7 @@ export default [
         "id": 1,
         "title": "KiwiFruit",
         "intro": "My CSS Animation works. Love Kiwi!",
-        "thumb": "/images/profile/project/kiwi-fruit.png",
+        "thumb": "/images/project/kiwi-fruit.png",
         "link": "https://kiwi-fruit.cyris.moe",
         "time": "2019.1.7"
     },
@@ -11,7 +11,7 @@ export default [
         "id": 2,
         "title": "Hugo Theme Yuki",
         "intro": "She is as pure as the snow.",
-        "thumb": "/images/profile/project/hugo-theme-yuki.png",
+        "thumb": "/images/project/hugo-theme-yuki.png",
         "link": "https://github.com/iCyris/hugo-theme-yuki",
         "time": "2019.1.28"
     },
@@ -19,7 +19,7 @@ export default [
         "id": 3,
         "title": "Ume",
         "intro": "An elegant theme for saber.js.",
-        "thumb": "/images/profile/project/Ume.png",
+        "thumb": "/images/project/Ume.png",
         "link": "https://github.com/iCyris/Ume",
         "time": "2019.3.25"
     }
