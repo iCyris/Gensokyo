@@ -8,7 +8,7 @@ $chapter2-theme-color-pink: #f67280;
 $chapter2-theme-color-black: #333333;
 $chapter2-theme-color-yellow: #fbf2d5;
 $chapter2-theme-color-purple: #7f7a95;
-$chapter2-theme-color-sky: #b5cfd8;
+$chapter2-theme-color-brown: #AC9994;
 
 #chapter2 {
     position: absolute;
@@ -121,9 +121,9 @@ $chapter2-theme-color-sky: #b5cfd8;
             position: absolute;
             width: 100%; height: 100%;
             left: 0; top: 0;
-            &:nth-child(1) { background-color: transparentize($chapter2-theme-color-sky, .8); }
-            &:nth-child(2) { background-color: transparentize($chapter2-theme-color-sky, .4); }
-            &:nth-child(3) { background-color: transparentize($chapter2-theme-color-sky, .0); }
+            &:nth-child(1) { background-color: transparentize($chapter2-theme-color-brown, .8); }
+            &:nth-child(2) { background-color: transparentize($chapter2-theme-color-brown, .4); }
+            &:nth-child(3) { background-color: transparentize($chapter2-theme-color-brown, .0); }
         }
     }
     .inside-squ {
@@ -141,7 +141,7 @@ $chapter2-theme-color-sky: #b5cfd8;
             z-index: 1;
             border-radius: 5px;
         }
-        &::before { background-color: $chapter2-theme-color-sky; }
+        &::before { background-color: $chapter2-theme-color-brown; }
         &::after  { border: $theme-color-milk 2px dashed; }
         div {
             position: relative;
@@ -191,8 +191,8 @@ $chapter2-theme-color-sky: #b5cfd8;
             transform-origin: center;
             transform: rotate(-90deg) scale(0);
         }
-        &::before { background-color: transparentize($chapter2-theme-color-sky, .4); }
-        &::after  { background-color: transparentize($chapter2-theme-color-sky, .0); }
+        &::before { background-color: transparentize($chapter2-theme-color-brown, .4); }
+        &::after  { background-color: transparentize($chapter2-theme-color-brown, .0); }
     }
     .lines {
         position: absolute;
@@ -223,43 +223,45 @@ $chapter2-theme-color-sky: #b5cfd8;
             }
         }
     }
-    .background {
-        position: absolute;
-        width: 100%; height: 100%;
-        opacity: 0;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f0eeea' fill-opacity='0.4'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    }
     .actress {
         position: absolute;
-        width: 40vmin; height: 40vmin;
-        left: calc(50% - 20vmin); top: calc(50% - 20vmin);
+        width: 100%; height: 100%;
+        left: 0; top: 0;
+        z-index: 2;
         &::after {
             position: absolute; content: "";
             width: 100%; height: 100%;
-            background-size: 60%;
-            background-position: center;
+            background-size: auto 100%;
+            background-position: bottom center;
             background-repeat: no-repeat;
-            background-image: url("../images/chapters/chapter2/actress.svg");
+            background-image: url("../images/chapters/chapter2/actress.png");
             opacity: 0;
         }
     }
 }
 .chapter2-close {
-    div {
+    .groups {
         position: absolute;
-        width: 150vmax; height: 150vmax;
-        transform: scale(0);
-        transform-origin: center;
-        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        div {
+            position: relative;
+            width: 50%;
+            height: 100%;
+        }
+        div:nth-child(1) {
+            transform-origin: right top;
+            transform: rotate(90deg);
+        }
+        div:nth-child(2) {
+            transform-origin: left top;
+            transform: rotate(-90deg);
+        }
     }
-    div:nth-child(1) {
-        left: calc(50% - 75vmax); top: calc(50% - 75vmax);
-        background-color: $theme-color-orchid;
-    }
-    div:nth-child(2) {
-        right: calc(50% - 75vmax); bottom: calc(50% - 75vmax);
-        background-color: $theme-color-milk;
-    }
+    .group-1 div { background-color: transparentize($theme-color-milk, .6); }
+    .group-2 div { background-color: transparentize($theme-color-milk, .3); }
+    .group-3 div { background-color: transparentize($theme-color-milk,  0); }
 }
 
 /*
@@ -367,13 +369,22 @@ $chapter2-theme-color-sky: #b5cfd8;
     .lines {
         div:nth-child(1) { animation: top-slide-in    .2s linear 5.4s forwards; }
         div:nth-child(2) { animation: right-slide-in  .2s linear 5.6s forwards; }
-        div:nth-child(3) { animation: bottom-slide-in .2s linear 5.4s forwards; }
-        div:nth-child(4) { animation: left-slide-in   .2s linear 5.6s forwards; }
+        div:nth-child(3) { animation: bottom-slide-in .2s linear 5.8s forwards; }
+        div:nth-child(4) { animation: left-slide-in   .2s linear 6.0s forwards; }
     }
-    .background { animation: fadein .4s ease 5.4s forwards; }
     .actress::after { animation: chapter2-actress-in .6s ease 5.8s forwards; }
 }
 .chapter2-close {
-    div:nth-child(1) { animation: scale0-1 .6s ease 6.4s forwards; }
-    div:nth-child(2) { animation: scale0-1 .6s ease 6.5s forwards; }
+    .group-1 {
+        div:nth-child(1) { animation: rotate90-0 .6s ease 6.4s forwards; }
+        div:nth-child(2) { animation: rotaten90-0 .6s ease 6.4s forwards; }
+    }
+    .group-2 {
+        div:nth-child(1) { animation: rotate90-0 .6s ease 6.5s forwards; }
+        div:nth-child(2) { animation: rotaten90-0 .6s ease 6.5s forwards; }
+    }
+    .group-3 {
+        div:nth-child(1) { animation: rotate90-0 .6s ease 6.6s forwards; }
+        div:nth-child(2) { animation: rotaten90-0 .6s ease 6.6s forwards; }
+    }
 }

@@ -62,12 +62,18 @@ export default function Chapter1() {
                     <div /><div /><div /><div />
                 </div>
                 <div className="center" />
-                <div className="background" />
                 <div className="actress" />
             </div>
             <div className="chapter2-close">
-                <div />
-                <div onAnimationEnd={() => dispatch({ type: "changeChapter", payload: nextChapter })} />
+                <div className="groups group-1">
+                    <div /><div />
+                </div>
+                <div className="groups group-2">
+                    <div /><div />
+                </div>
+                <div className="groups group-3">
+                    <div /><div onAnimationEnd={() => dispatch({ type: "changeChapter", payload: nextChapter })} />
+                </div>
             </div>
         </div>
     )
