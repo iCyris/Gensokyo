@@ -7,10 +7,8 @@ export default function Prologue() {
 
     const nextChapter = open("Chapter_1")
     const lastChapter = {
-        //name: "LastChapter",
-        //description: "Main Land"
-        name: "Chapter_2",
-        description: "猫と月"
+        name: "LastChapter",
+        description: "Main Land"
     }
 
     return (
