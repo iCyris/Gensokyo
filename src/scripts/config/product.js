@@ -22,5 +22,13 @@ export default [
         "thumb": "/images/project/Ume.png",
         "link": "https://github.com/iCyris/Ume",
         "time": "2019.3.25"
+    },
+    {
+        "id": 4,
+        "title": "Vidar Website",
+        "intro": "Vidar-Team official site.",
+        "thumb": "/images/project/vidar-site.png",
+        "link": "https://github.com/iCyris/Vidar-Website",
+        "time": "2019.6.5"
     }
 ]
