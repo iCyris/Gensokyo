@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "36edfa60eab3c638162a8b35e1f5bea3",
+    "revision": "2cd79ec0a0a2a0d50de71ef44f3cb9d9",
     "url": "/index.html"
   },
   {
-    "revision": "b27946cb8b7890b81d9e",
-    "url": "/static/css/main.e2a6b5cc.chunk.css"
+    "revision": "d2c03f7479f336cfed2c",
+    "url": "/static/css/main.516e5eda.chunk.css"
   },
   {
     "revision": "95655bd63c59432d4c14",
     "url": "/static/js/2.d29737c2.chunk.js"
   },
   {
-    "revision": "b27946cb8b7890b81d9e",
+    "revision": "d2c03f7479f336cfed2c",
     "url": "/static/js/main.96094a8b.chunk.js"
   },
   {
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/actress.b1304304.png"
   },
   {
-    "revision": "27ad604d069249efac183f748bc58acb",
-    "url": "/static/media/avatar.27ad604d.jpg"
+    "revision": "cbd906483d30d80fac0bc6c3161b2500",
+    "url": "/static/media/avatar.cbd90648.jpg"
   },
   {
     "revision": "59cf188094ca152db7ed59dc09e4cafb",
