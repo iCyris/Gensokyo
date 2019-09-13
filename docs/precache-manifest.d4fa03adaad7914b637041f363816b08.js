@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dc79e698a48739e6daac6c62d9d0d7d8",
+    "revision": "aa46c05089abb5683e510fbcf198d81b",
     "url": "/index.html"
   },
   {
-    "revision": "9e7146a866b560cebea3",
-    "url": "/static/css/main.e2a6b5cc.chunk.css"
+    "revision": "31f2c7376592a47d9f7c",
+    "url": "/static/css/main.2db0a6ce.chunk.css"
   },
   {
     "revision": "95655bd63c59432d4c14",
     "url": "/static/js/2.d29737c2.chunk.js"
   },
   {
-    "revision": "9e7146a866b560cebea3",
-    "url": "/static/js/main.a1d63aa4.chunk.js"
+    "revision": "31f2c7376592a47d9f7c",
+    "url": "/static/js/main.068459f1.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/actress.b1304304.png"
   },
   {
-    "revision": "27ad604d069249efac183f748bc58acb",
-    "url": "/static/media/avatar.27ad604d.jpg"
+    "revision": "95f6e83ae4929900cab680b5fd8612e0",
+    "url": "/static/media/avatar.95f6e83a.jpg"
   },
   {
     "revision": "59cf188094ca152db7ed59dc09e4cafb",

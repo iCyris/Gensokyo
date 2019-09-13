@@ -39,7 +39,7 @@ export default function ProfilePage() {
                         <p>兴趣：Web (Data Visualization)、RPG、ACG</p>
                         <p>喜欢的技术：Animation、WebGL、illustrator</p>
                         <p>喜欢的食物：西西做的菜、牛油火锅、大头萝卜炖年糕、面条、果汁</p>
-                        <p>目前：参加秋招中 =w=</p>
+                        <p>目前：Alibaba (TXD-Team)</p>
                         <p>邮箱：cyris#pen.moe (# -> @)</p>
                     </div>
                 </div>
