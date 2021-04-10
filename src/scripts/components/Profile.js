@@ -40,7 +40,7 @@ export default function ProfilePage() {
                         <p>喜欢的技术：Animation、WebGL、illustrator</p>
                         <p>喜欢的食物：西西做的饭、面条、水果们</p>
                         <p>目前：Aliyun</p>
-                        <p>邮箱：cyris#pen.moe (# -> @)</p>
+                        <p>邮箱：i#cyris.moe (# -> @)</p>
                     </div>
                 </div>
             </section>

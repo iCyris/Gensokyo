@@ -2,7 +2,7 @@
   "name": "cyris-moe",
   "version": "2.0.0",
   "private": true,
-  "author": "Cyris <cyris@pen.moe>",
+  "author": "Cyris <i@cyris.moe>",
   "homepage": "https://cyris.moe",
   "dependencies": {
     "node-sass": "^4.12.0",
