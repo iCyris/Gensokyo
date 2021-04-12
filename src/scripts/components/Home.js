@@ -25,7 +25,7 @@ export default function HomePage() {
             </div>
             <div className="index-sns">
                 <div className="inner">
-                    <a target="_blank" href="https://cyris.pen.moe" title="Blog" rel="noopener noreferrer">
+                    <a target="_blank" href="https://sound.cyris.moe" title="Blog" rel="noopener noreferrer">
                         <i className="czs-pen-write"/>
                     </a>
                     <a target="_blank" href="https://kiwi-fruit.cyris.moe" title="KiwiFruit"
