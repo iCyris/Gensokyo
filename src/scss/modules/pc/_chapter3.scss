@@ -177,7 +177,7 @@ $chapter3-delay: 1.3;
 .chapter3-sunny__cards {
     .part-1 { div { animation: scale0-1 1s ease #{$chapter3-delay + 0.7}s forwards ;} }
     .part-2 {
-        span { animation: fade_in .1s ease #{$chapter3-delay + 2.1}s forwards ;}
+        span { animation: fadein .1s ease #{$chapter3-delay + 2.1}s forwards ;}
         div:nth-child(2)::after { animation: chapter3-slide-in__type2 .5s ease #{$chapter3-delay + 1.6}s forwards, chapter3-slide-left .5s ease #{$chapter3-delay + 2.2}s forwards ;}
         div:nth-child(3)::after { animation: chapter3-slide-in__type1 .5s ease #{$chapter3-delay + 1.6}s forwards, chapter3-slide-left .5s ease #{$chapter3-delay + 2.2}s forwards ;}
     }
