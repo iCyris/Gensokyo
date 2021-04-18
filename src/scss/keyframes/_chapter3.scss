@@ -1,0 +1,82 @@
+/*
+ * Keyframes - chapter 3
+ */
+@keyframes chapter3-slide-in {
+    to {transform: translateY(0);}
+}
+
+@keyframes chapter3-slide-out {
+    to {transform: translateY(100%);}
+}
+
+@keyframes chapter3-slide-in__type1 {
+    from {
+        transform: translateY(-100%);
+    } to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes chapter3-slide-out__type1 {
+    from {
+        transform: translateY(0%);
+    } to {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes chapter3-slide-in__type2 {
+    from {
+        transform: translateY(100%);
+    } to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes chapter3-slide-out__type2 {
+    from {
+        transform: translateY(0%);
+    } to {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes chapter3-slide-left {
+    from {transform: translateX(0%);}
+    to {transform: translateX(-100%);}
+}
+
+@keyframes chapter3-slide-right {
+    from {transform: translateX(0%);}
+    to {transform: translateX(100%);}
+}
+
+@keyframes chapter3-scale0-2 {
+    0% {transform: scale(0);}
+    100% {transform: scale(2);}
+}
+
+@keyframes chapter3-lights-in {
+    from {transform: translateY(-100%);}
+    to {transform: translateY(100%);}
+}
+
+@keyframes chapter3-rot {
+    to { transform: rotate(1turn); } 
+}
+
+
+@keyframes chapter3-shiny-in-out {
+    0% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+    30% {
+        transform: scale(0.3);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(8);
+        opacity: 1;
+    }
+}

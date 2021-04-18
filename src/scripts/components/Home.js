@@ -28,9 +28,9 @@ export default function HomePage() {
                     <a target="_blank" href="https://sound.cyris.moe" title="Blog" rel="noopener noreferrer">
                         <i className="czs-pen-write"/>
                     </a>
-                    <a target="_blank" href="https://kiwi-fruit.cyris.moe" title="KiwiFruit"
+                    <a target="_blank" href="https://sound.cyris.moe/friends" title="Friends"
                        rel="noopener noreferrer">
-                        <i className="czs-crown"/>
+                        <i className="czs-pokemon-ball"/>
                     </a>
                     <a target="_blank" href="https://github.com/iCyris" title="GitHub" rel="noopener noreferrer">
                         <i className="czs-github-logo"/>

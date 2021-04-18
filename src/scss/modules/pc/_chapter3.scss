@@ -1,0 +1,236 @@
+/*
+ * Chapter-3
+ */
+$chapter3-theme-color-yellow: #d0b66b;
+$chapter3-theme-color-yellow-light: #DCCC9E;
+$chapter3-delay: 1.3;
+
+@function randomNum($max, $min: 0, $u: 1) {
+    @return ($min + random($max))*$u;
+}
+  
+@function rays() {
+    $n: 10 + random(16);
+    $list: ();
+
+    @for $i from 0 to $n {
+        $list: $list, rgba(hsl(176, 33, 75), randomNum(10, 0, 0.1));
+    }
+    
+    
+    @return conic-gradient($list, nth($list, 1));
+}
+
+#chapter3 {
+    position: absolute;
+    width: 100%; height: 100%;
+    left: 0; top: 0;
+    overflow: hidden;
+}
+
+.chapter3-sunny__in {
+    position: absolute;
+    width: 100%; height: 100%;
+    display: flex;
+    div {
+    position: relative;
+    width: 20%; height: 100%;
+    background-color: $chapter3-theme-color-yellow;
+    }
+    div:nth-child(odd)  { transform: translateY(-100%) ;}
+    div:nth-child(even) { transform: translateY(100%)  ;}
+}
+.chapter3-sunny__cards {
+    .part-1 {
+        div {
+            position: absolute;
+            width: 200vmax; height: 200vmax;
+            border-radius: 50%;
+            background-color: $chapter3-theme-color-yellow-light;
+            transform: scale(0); transform-origin: center;
+        }
+        div:nth-child(1) { left:  calc(50% - 150vmax); top: calc(50% - 150vmax)    ;}
+        div:nth-child(2) { right: calc(50% - 150vmax); bottom: calc(50% - 150vmax) ;}
+    }
+    .part-2 {
+        position: absolute;
+        width: 100vw; height: 100vh;
+        span {
+            position: absolute;
+            width: 100%; height: 100%;
+            left: 0; top: 0;
+            background-color: $chapter3-theme-color-yellow;
+            opacity: 0;
+        }
+        span::after {
+            content: ""; position: absolute;
+            width: 100%; height: 100%;
+            left: 0; top: 0;
+            background-image: url("../images/chapters/chapter3/cards-bg.svg");
+            background-size: 20%;
+            opacity: .5;
+        }
+        div {
+            position: absolute;
+            width: 100%; height: 50%;
+            overflow: hidden;
+        }
+        div::after {
+            content: ""; position: absolute;
+            width: 100%; height: 100%;
+            left: 0; top: 0;
+            background-color: $chapter3-theme-color-yellow;
+            transform-origin: top;
+        }
+        div:nth-child(2) {left: 0; top: 0;}
+        div:nth-child(3) {left: 0; bottom: 0;}
+        div:nth-child(2)::after {transform: translateY(100%);}
+        div:nth-child(3)::after {transform: translateY(-100%);}
+    }
+    .part-3 {
+        div {
+            position: absolute;
+            width: 200vmax; height: 200vmax;
+            border-radius: 50%;
+            transform: scale(0);
+            transform-origin: center;
+        }
+        div:nth-child(1) { left:  calc(50% - 150vmax); bottom: calc(50% - 150vmax); background-color: #acc6aa ;}
+        div:nth-child(2) { right: calc(50% - 150vmax); top:    calc(50% - 150vmax); background-color: #393e46 ;}
+    }
+}
+.chapter3-sunny__lights {
+    section {
+        div {
+            position: absolute;
+            width: 3px; height: 100vmax;
+            left: calc(50% - 1.5px); top: calc(50% - 100vmax);
+            overflow: hidden;
+            transform-origin: bottom;
+        }
+        div::before, div::after {
+            content: ""; position: absolute;
+            width: 100%; height: 100%;
+            left: 0; top: 0;
+            background-color: #fff;
+            transform: translateY(-100%);
+            border-radius: 5px;
+        }
+        div:nth-child(1)  { transform: rotate(0deg)  ;}
+        div:nth-child(2)  { transform: rotate(30deg) ;}
+        div:nth-child(3)  { transform: rotate(60deg) ;}
+        div:nth-child(4)  { transform: rotate(90deg) ;}
+        div:nth-child(5)  { transform: rotate(120deg) ;}
+        div:nth-child(6)  { transform: rotate(150deg) ;}
+        div:nth-child(7)  { transform: rotate(180deg) ;}
+        div:nth-child(8)  { transform: rotate(210deg) ;}
+        div:nth-child(9)  { transform: rotate(240deg) ;}
+        div:nth-child(10) { transform: rotate(270deg) ;}
+        div:nth-child(11) { transform: rotate(300deg) ;}
+        div:nth-child(12) { transform: rotate(330deg) ;}
+    }
+}
+
+.chapter3-shiny-wrap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .chapter3-shiny-box {
+        position: relative;
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    .chapter3-shiny-item {
+        width: 100vmin; height: 100vmin;
+        position: relative;
+        &:before, &:after {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%; height: 100%;
+            border-radius: 50%;
+            box-shadow: 0 0 24px 40px #393e46 inset;
+            content: '';
+          }
+          
+          &:before { background: rays(); }
+          &:after {
+            background: rays();
+            
+          }
+    }
+}
+
+/* Animation */
+.chapter3-sunny__in { div { animation: chapter3-slide-in .8s ease #{$chapter3-delay}s forwards ;} }
+.chapter3-sunny__cards {
+    .part-1 { div { animation: scale0-1 1s ease #{$chapter3-delay + 0.7}s forwards ;} }
+    .part-2 {
+        span { animation: fade_in .1s ease #{$chapter3-delay + 2.1}s forwards ;}
+        div:nth-child(2)::after { animation: chapter3-slide-in__type2 .5s ease #{$chapter3-delay + 1.6}s forwards, chapter3-slide-left .5s ease #{$chapter3-delay + 2.2}s forwards ;}
+        div:nth-child(3)::after { animation: chapter3-slide-in__type1 .5s ease #{$chapter3-delay + 1.6}s forwards, chapter3-slide-left .5s ease #{$chapter3-delay + 2.2}s forwards ;}
+    }
+    .part-3 {
+        div:nth-child(1) { animation: chapter3-scale0-2 1.5s ease #{$chapter3-delay + 2.7}s forwards ;}
+        div:nth-child(2) { animation: chapter3-scale0-2 1.5s ease #{$chapter3-delay + 3}s forwards ;}
+    }
+}
+.chapter3-sunny__lights {
+    .part-1 {
+        div:nth-child(1)::after  { animation: chapter3-lights-in .8s #{$chapter3-delay + 0.7}s ease forwards ;}
+        div:nth-child(2)::after  { animation: chapter3-lights-in .8s #{$chapter3-delay + 0.8}s ease forwards ;}
+        div:nth-child(3)::after  { animation: chapter3-lights-in .8s #{$chapter3-delay + 0.9}s ease forwards ;}
+        div:nth-child(4)::after  { animation: chapter3-lights-in .8s #{$chapter3-delay + 1.0}s ease forwards ;}
+        div:nth-child(5)::after  { animation: chapter3-lights-in .8s #{$chapter3-delay + 1.1}s ease forwards ;}
+        div:nth-child(6)::after  { animation: chapter3-lights-in .8s #{$chapter3-delay + 1.2}s ease forwards ;}
+        div:nth-child(7)::after  { animation: chapter3-lights-in .8s #{$chapter3-delay + 1.3}s ease forwards ;}
+        div:nth-child(8)::after  { animation: chapter3-lights-in .8s #{$chapter3-delay + 1.4}s ease forwards ;}
+        div:nth-child(9)::after  { animation: chapter3-lights-in .8s #{$chapter3-delay + 1.5}s ease forwards ;}
+        div:nth-child(10)::after { animation: chapter3-lights-in .8s #{$chapter3-delay + 1.6}s ease forwards ;}
+        div:nth-child(11)::after { animation: chapter3-lights-in .8s #{$chapter3-delay + 1.7}s ease forwards ;}
+        div:nth-child(12)::after { animation: chapter3-lights-in .8s #{$chapter3-delay + 1.8}s ease forwards ;}
+    }
+    .part-2 {
+        div:nth-child(1)::after  { animation: chapter3-lights-in .8s #{$chapter3-delay + 1.9}s ease forwards ;}
+        div:nth-child(2)::after  { animation: chapter3-lights-in .8s #{$chapter3-delay + 2.0}s ease forwards ;}
+        div:nth-child(3)::after  { animation: chapter3-lights-in .8s #{$chapter3-delay + 2.1}s ease forwards ;}
+        div:nth-child(4)::after  { animation: chapter3-lights-in .8s #{$chapter3-delay + 2.2}s ease forwards ;}
+        div:nth-child(5)::after  { animation: chapter3-lights-in .8s #{$chapter3-delay + 2.3}s ease forwards ;}
+        div:nth-child(6)::after  { animation: chapter3-lights-in .8s #{$chapter3-delay + 2.4}s ease forwards ;}
+        div:nth-child(7)::after  { animation: chapter3-lights-in .8s #{$chapter3-delay + 2.5}s ease forwards ;}
+        div:nth-child(8)::after  { animation: chapter3-lights-in .8s #{$chapter3-delay + 2.6}s ease forwards ;}
+        div:nth-child(9)::after  { animation: chapter3-lights-in .8s #{$chapter3-delay + 2.7}s ease forwards ;}
+        div:nth-child(10)::after { animation: chapter3-lights-in .8s #{$chapter3-delay + 2.8}s ease forwards ;}
+        div:nth-child(11)::after { animation: chapter3-lights-in .8s #{$chapter3-delay + 2.9}s ease forwards ;}
+        div:nth-child(12)::after { animation: chapter3-lights-in .8s #{$chapter3-delay + 3.0}s ease forwards ;}
+        div:nth-child(1)::before { animation: chapter3-lights-in .8s #{$chapter3-delay + 3.1}s ease forwards ;}
+    }
+}
+
+#chapter3 {
+    animation: fadeout .7s ease #{$chapter3-delay + 6}s forwards;
+}
+
+.chapter3-shiny-box {
+    animation: chapter3-shiny-in-out 5s ease #{$chapter3-delay + 4}s forwards;
+}
+.chapter3-shiny-item {
+    &::before, &::after {
+        animation: chapter3-rot randomNum(100, 25, .1s) ease-in-out #{$chapter3-delay + 4}s infinite;
+    }
+    &::after {
+        animation-duration: randomNum(100, 25, .1s);
+        animation-direction: reverse;
+    }
+}
