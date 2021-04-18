@@ -65,7 +65,6 @@
     to { transform: rotate(1turn); } 
 }
 
-
 @keyframes chapter3-shiny-in-out {
     0% {
         transform: scale(1.2);
@@ -78,5 +77,14 @@
     100% {
         transform: scale(8);
         opacity: 1;
+    }
+}
+
+@keyframes chapter3-fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .15;
     }
 }
