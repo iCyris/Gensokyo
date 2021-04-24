@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "45892ea08c65a319f4b12aa5046227c8",
+    "revision": "7e05f8f140f244561ba937886c392512",
     "url": "/index.html"
   },
   {
-    "revision": "2603584d6d3cddc11b0d",
-    "url": "/static/css/main.9a3fb3ba.chunk.css"
+    "revision": "fbe56a85bae505f3202e",
+    "url": "/static/css/main.56c9e355.chunk.css"
   },
   {
     "revision": "95655bd63c59432d4c14",
     "url": "/static/js/2.d29737c2.chunk.js"
   },
   {
-    "revision": "2603584d6d3cddc11b0d",
+    "revision": "fbe56a85bae505f3202e",
     "url": "/static/js/main.d137dc62.chunk.js"
   },
   {
@@ -22,10 +22,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b1304304d1239914903df107aa371c2b",
     "url": "/static/media/actress.b1304304.png"
-  },
-  {
-    "revision": "6256d0491cf0ec8edeccc6a8dafaa74d",
-    "url": "/static/media/avatar.6256d049.png"
   },
   {
     "revision": "59cf188094ca152db7ed59dc09e4cafb",
