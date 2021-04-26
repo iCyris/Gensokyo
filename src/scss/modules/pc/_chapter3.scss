@@ -227,7 +227,7 @@ $chapter3-delay: 1.3;
 }
 .chapter3-shiny-item {
     &::before, &::after {
-        animation: chapter3-rot randomNum(100, 25, .1s) ease-in-out #{$chapter3-delay + 4}s infinite;
+        animation: chapter3-rot 8s ease-in-out #{$chapter3-delay + 4}s infinite;
     }
     &::after {
         animation-duration: randomNum(100, 25, .1s);
