@@ -37,9 +37,9 @@ export default function ProfilePage() {
                     <div className="inner">
                         <p>ID：Cyris／绿生</p>
                         <p>兴趣：ACG、Karaoke、RPG Games</p>
-                        <p>喜欢的技术：CSS Animation、画出好看东西的能力 🎨</p>
+                        <p>喜欢的技术：CSS Animation、画出好看人物的能力！</p>
                         <p>喜欢的食物：西西家今天的饭、中式面条</p>
-                        <p>目前：Alibaba</p>
+                        <p>目前：在阿里写前端 ๑•́ωก̀๑</p>
                         <p>邮箱：i#cyris.moe (# -> @)</p>
                     </div>
                 </div>
