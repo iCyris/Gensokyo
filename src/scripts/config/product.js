@@ -30,5 +30,13 @@ export default [
         "thumb": "/images/project/vidar-site.png",
         "link": "https://github.com/iCyris/Vidar-Website",
         "time": "2019.6.5"
+    },
+    {
+        "id": 5,
+        "title": "Magia",
+        "intro": "魔法少女まどか☆マギカ CSS animation exercises.",
+        "thumb": "/images/project/magia.png",
+        "link": "https://magia.cyris.moe/",
+        "time": "2021.5.29"
     }
 ]
