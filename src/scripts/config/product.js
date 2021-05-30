@@ -34,7 +34,7 @@ export default [
     {
         "id": 5,
         "title": "Magia",
-        "intro": "魔法少女まどか☆マギカ CSS animation exercises.",
+        "intro": "魔法少女まどか☆マギカ.",
         "thumb": "/images/project/magia.png",
         "link": "https://magia.cyris.moe/",
         "time": "2021.5.29"
