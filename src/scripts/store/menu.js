@@ -4,7 +4,7 @@ export const initialState = {
     dataState: "init",
     chapter: {
         name: "Prologue",
-        description: "『 绿生的幻想乡 』"
+        description: "『 鹿营的幻想乡 』"
     }
 }
 
