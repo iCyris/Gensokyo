@@ -26,7 +26,7 @@ export default function ProfilePage() {
                 <div className="avatar" />
                 <div className="author">Cyris</div>
                 <div className="description">
-                    {'\u00A0'}{'\u00A0'}新出的芽用它的温柔融化了少年心中的墙堵箭影，「鹿营」由此而生。我希望通过 Coding 的方式来描绘自己的内心世界，因不甘平庸而奋起，因不达目标而不懈。
+                    {'\u00A0'}{'\u00A0'}新出的芽用它的温柔融化了少年心中的墙堵箭影，「绿生」由此而生。我希望通过 Coding 的方式来描绘自己的内心世界，因不甘平庸而奋起，因不达目标而不懈。
                 </div>
             </section>
 
@@ -35,7 +35,7 @@ export default function ProfilePage() {
                 <div className="title">Information</div>
                 <div className="information">
                     <div className="inner">
-                        <p>ID：Cyris／鹿营</p>
+                        <p>ID：Cyris／绿生</p>
                         <p>兴趣：ACG、Karaoke、RPG Games</p>
                         <p>最喜欢的颜色：<span style={{color: '#81c7d4'}}>#81c7d4</span></p>
                         <p>喜欢的食物：西西家今天的饭、中式面条</p>
