@@ -1,6 +1,7 @@
 @font-face{
-    font-family: 'MF'; 
-    src: url('/fonts/MFSongFeng.otf');
+    font-family: 'MF';
+    font-weight: normal;
+    src: url('/fonts/MF.ttf');
 }
 /*
  * Open chapter
@@ -42,7 +43,7 @@
         margin-top: .4em;
         font-family: "MF", serif;
         font-size: 4.5em;
-        line-height: 2.2em;
+        line-height: 2.4em;
         border-top: 2px solid;
         border-bottom: 2px solid;
         box-sizing: border-box;
