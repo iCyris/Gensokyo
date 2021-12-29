@@ -39,7 +39,7 @@ export default function ProfilePage() {
                         <p>兴趣：ACG、Karaoke、RPG Games</p>
                         <p>最喜欢的颜色：<span style={{color: '#C6D57E'}}>#C6D57E</span></p>
                         <p>喜欢的食物：西西家今天的饭、中式面条</p>
-                        <p>工作：前端工程师</p>
+                        <p>印象：前端画手 / 无厘头奏者</p>
                         <p>邮箱：i#cyris.moe (# -> @)</p>
                     </div>
                 </div>
