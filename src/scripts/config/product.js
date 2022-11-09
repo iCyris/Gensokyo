@@ -38,5 +38,13 @@ export default [
         "thumb": "/images/project/magia.png",
         "link": "https://magia.cyris.moe/",
         "time": "2021.5.29"
+    },
+    {
+        "id": 6,
+        "title": "We're Vox!",
+        "intro": "Hello hello meow~~~",
+        "thumb": "/images/project/wearevox.png",
+        "link": "https://voxakuma.lol/",
+        "time": "2022.11.10"
     }
 ]

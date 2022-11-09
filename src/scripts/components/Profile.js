@@ -37,7 +37,7 @@ export default function ProfilePage() {
                     <div className="inner">
                         <p>ID：Cyris／绿生</p>
                         <p>兴趣：音乐相关的事物、开放世界类游戏</p>
-                        <p>最喜欢的颜色：<span style={{color: '#C6D57E'}}>#C6D57E</span></p>
+                        <p>最喜欢的颜色：<span style={{color: '#79a5b3'}}>#79a5b3</span></p>
                         <p>喜欢的食物：西西家今天的饭、中式面条、苹果</p>
                         <p>印象：前端画手 / 无厘头奏者</p>
                         <p>邮箱：i#cyris.moe (# -> @)</p>
