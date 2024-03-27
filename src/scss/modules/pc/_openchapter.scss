@@ -1,7 +1,7 @@
 @font-face{
     font-family: 'MF';
     font-weight: normal;
-    src: url('/fonts/MF.ttf');
+    src: url('../../../../public/fonts/MF.ttf');
 }
 /*
  * Open chapter
@@ -19,7 +19,7 @@
     position: absolute;
     width: 100%; height: 100%;
     left: 0; top: 0;
-    background-image: url("../images/chapters/dots.svg");
+    background-image: url("/images/chapters/dots.svg");
     background-size: 15px;
     opacity: 0;
 }

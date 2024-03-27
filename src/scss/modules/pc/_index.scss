@@ -10,7 +10,7 @@
     width: 100%; height: 100%;
     overflow: hidden;
     background-color: $theme-index-white;
-    background-image: url("../images/index/diandian.svg");
+    background-image: url("/images/index/diandian.svg");
     background-size: 30px;
     opacity: 0;
     span {
@@ -42,7 +42,7 @@
     position: absolute;
     width: 80vmin; height: 24vmin;
     left: calc(50% - 40vmin); top: calc(50% - 12vmin);
-    background-image: url("../images/index/logo.svg");
+    background-image: url("/images/index/logo.svg");
     background-size: 80vmin;
     background-repeat: no-repeat;
     background-position: center;

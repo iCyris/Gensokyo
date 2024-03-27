@@ -1,16 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.fca24bf2.chunk.css",
-    "main.js": "/static/js/main.aed41f83.chunk.js",
-    "main.js.map": "/static/js/main.aed41f83.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/js/2.d29737c2.chunk.js": "/static/js/2.d29737c2.chunk.js",
-    "static/js/2.d29737c2.chunk.js.map": "/static/js/2.d29737c2.chunk.js.map",
+    "main.css": "/static/css/main.ce27e35d.css",
+    "main.js": "/static/js/main.bed1d1f9.js",
+    "static/media/MF.ttf": "/static/media/MF.1de4dbf30401f0da1351.ttf",
+    "static/media/logo.svg": "/static/media/logo.2ca4d02c008967731e9d.svg",
+    "static/media/actress.png": "/static/media/actress.5d995b546532743b42d2.png",
+    "static/media/title.svg": "/static/media/title.f0a842f7855eddcafe9e.svg",
     "index.html": "/index.html",
-    "precache-manifest.b053c294fe9b81aa18cb113fccc81c59.js": "/precache-manifest.b053c294fe9b81aa18cb113fccc81c59.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.fca24bf2.chunk.css.map": "/static/css/main.fca24bf2.chunk.css.map",
-    "static/media/style.scss": "/static/media/title.0aaf05ee.svg"
-  }
+    "static/media/progolue-title-part2.svg": "/static/media/progolue-title-part2.63e246fab8dad2ff33f5.svg",
+    "static/media/progolue-title-part1.svg": "/static/media/progolue-title-part1.9c5094397abeedaab4fc.svg",
+    "static/media/progolue-skip.svg": "/static/media/progolue-skip.6ad4ef3ded63d85144ca.svg",
+    "static/media/claw-left.svg": "/static/media/claw-left.246c287126cc3576676c.svg",
+    "static/media/claw-right.svg": "/static/media/claw-right.1459a31dd0425877515e.svg",
+    "static/media/cards-bg.svg": "/static/media/cards-bg.90d176efa6fcc9afcc81.svg",
+    "static/media/background.svg": "/static/media/background.56429bac77e0a00ed758.svg",
+    "static/media/dots.svg": "/static/media/dots.33b44201d9718109e59f.svg",
+    "static/media/diandian.svg": "/static/media/diandian.9ccf139a56263e7be68d.svg",
+    "main.ce27e35d.css.map": "/static/css/main.ce27e35d.css.map",
+    "main.bed1d1f9.js.map": "/static/js/main.bed1d1f9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ce27e35d.css",
+    "static/js/main.bed1d1f9.js"
+  ]
 }

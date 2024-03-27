@@ -70,11 +70,11 @@ $chapter2-theme-color-brown: #AC9994;
         }
     }
     .left div:nth-child(even) {
-        &, &::after { background-image: url("../images/chapters/chapter2/claw-left.svg"); opacity: 0; }
+        &, &::after { background-image: url("/images/chapters/chapter2/claw-left.svg"); opacity: 0; }
     }
     .right {
         div:nth-child(3), div:nth-child(5) {
-            &, &::after { background-image: url("../images/chapters/chapter2/claw-right.svg"); opacity: 0; }
+            &, &::after { background-image: url("/images/chapters/chapter2/claw-right.svg"); opacity: 0; }
         }
     }
 }
@@ -234,7 +234,7 @@ $chapter2-theme-color-brown: #AC9994;
             background-size: auto 100%;
             background-position: bottom center;
             background-repeat: no-repeat;
-            background-image: url("../images/chapters/chapter2/actress.png");
+            background-image: url("/images/chapters/chapter2/actress.png");
             opacity: 0;
         }
     }
